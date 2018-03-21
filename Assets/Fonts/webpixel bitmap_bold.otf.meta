@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 4e78907b46818384d9a32684225484e9
+timeCreated: 1519218824
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: webpixel bitmap
+  fontNames:
+  - webpixel bitmap
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 20ffbc6132ba4234d9ac27c03a549207, type: 3}
+  - {fileID: 12800000, guid: 2cb77496b5838b844a7795aeaf21833b, type: 3}
+  - {fileID: 12800000, guid: 1892124e9e0c1aa40b8b240fd83c7ec9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
