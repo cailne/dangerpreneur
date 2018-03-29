@@ -1,0 +1,223 @@
+[
+    {
+        "id": 0,
+        "title": "Badik Tumbuk Lado",
+        "stats": {
+            "lethality": 38,
+            "durability": 41,
+            "weight": 35,
+            "cost": 405
+        },
+        "slug": "badik_tumbuk_lado",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 1,
+        "title": "Celurit",
+        "stats": {
+            "lethality": 63,
+            "durability": 12,
+            "weight": 27,
+            "cost": 285
+        },
+        "slug": "celurit",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 2,
+        "title": "Dohong",
+        "stats": {
+            "lethality": 9,
+            "durability": 79,
+            "weight": 36,
+            "cost": 475
+        },
+        "slug": "dohong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 3,
+        "title": "Golok",
+        "stats": {
+            "lethality": 40,
+            "durability": 21,
+            "weight": 27,
+            "cost": 235
+        },
+        "slug": "golok",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 4,
+        "title": "Keris",
+        "stats": {
+            "lethality": 60,
+            "durability": 23,
+            "weight": 25,
+            "cost": 500
+        },
+        "slug": "keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 5,
+        "title": "Kujang",
+        "stats": {
+            "lethality": 32,
+            "durability": 27,
+            "weight": 12,
+            "cost": 315
+        },
+        "slug": "kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 6,
+        "title": "Mandau",
+        "stats": {
+            "lethality":41,
+            "durability": 28,
+            "weight": 23,
+            "cost": 62
+        },
+        "slug": "mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 7,
+        "title": "Parang Salawaku",
+        "stats": {
+            "lethality": 42,
+            "durability": 28,
+            "weight": 25,
+            "cost": 488
+        },
+        "slug": "parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 8,
+        "title": "Pasatimpo",
+        "stats": {
+            "lethality": 26,
+            "durability": 53,
+            "weight": 12,
+            "cost": 512
+        },
+        "slug": "pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 9,
+        "title": "Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 30,
+            "durability": 25,
+            "weight": 22,
+            "cost": 180
+        },
+        "slug": "pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 10,
+        "title": "Pedang Jenawi",
+        "stats": {
+            "lethality": 39,
+            "durability": 67,
+            "weight": 43,
+            "cost": 356
+        },
+        "slug": "pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 11,
+        "title": "Piso Gaja Dompak",
+        "stats": {
+            "lethality": 20,
+            "durability": 57,
+            "weight": 16,
+            "cost": 122
+        },
+        "slug": "piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 12,
+        "title": "Rencong",
+        "stats": {
+            "lethality": 40,
+            "durability": 28,
+            "weight": 22,
+            "cost": 300
+        },
+        "slug": "rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 13,
+        "title": "Siwar Panjang",
+        "stats": {
+            "lethality": 66,
+            "durability": 31,
+            "weight": 62,
+            "cost": 285
+        },
+        "slug": "siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 14,
+        "title": "Terapang",
+        "stats": {
+            "lethality": 37,
+            "durability": 59,
+            "weight": 36,
+            "cost": 197
+        },
+        "slug": "terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 15,
+        "title": "Tombak Trisula",
+        "stats": {
+            "lethality": 10,
+            "durability": 20,
+            "weight": 15,
+            "cost": 355
+        },
+        "slug": "tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 16,
+        "title": "Wamilo",
+        "stats": {
+            "lethality": 34,
+            "durability": 70,
+            "weight": 19,
+            "cost": 230
+        },
+        "slug": "wamilo",
+        "stackable": false,
+        "description": ""
+    }
+]

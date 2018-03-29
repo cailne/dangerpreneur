@@ -51,9 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\AddInventory.cs" />
      <Compile Include="Assets\Script\CamControl.cs" />
-     <Compile Include="Assets\Script\Recruit.cs" />
+     <Compile Include="Assets\Script\ClickInput.cs" />
+     <Compile Include="Assets\Script\EnergyScript.cs" />
+     <Compile Include="Assets\Script\ItemDatabase.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
+     <Compile Include="Assets\Script\TrueInventory.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -153,6 +157,10 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>C:/Users/Leonardo/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{90796405-5169-A2AD-9FB8-4A338CA2878D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
