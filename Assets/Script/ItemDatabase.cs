@@ -9,11 +9,11 @@ public class ItemDatabase : MonoBehaviour {
 	private List<Item> database = new List<Item>();
 	private JsonData itemData;
 
-	void start(){
+	void Start(){
 		itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/DATABASE/Items.json"));
 		ConstructDatabase();
 
-
+		Debug.Log(database[3].Title);
 	}
 
 	public Item FetchByID(int id){
@@ -49,6 +49,7 @@ public class Item
 		public string Slug {get; set;}
 		public bool Stackable {get; set;}
 		public string Description {get; set;}
+		public Sprite Sprite {get; set;}
 
 		public Item(int id, string title, int lethality, int durability, int weight, int cost, string slug, bool stackable, string description){
 			this.ID = id;
@@ -60,6 +61,7 @@ public class Item
 			this.Slug = slug;
 			this.Stackable = stackable;
 			this.Description = description;
+			this.Sprite = Resources.Load<Sprite>("Sprites/Items/" + slug);
 		}
 
 		public Item(){
