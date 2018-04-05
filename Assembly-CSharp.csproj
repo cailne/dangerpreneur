@@ -59,6 +59,7 @@
      <Compile Include="Assets\Script\ItemDatabase.cs" />
      <Compile Include="Assets\Script\Slot.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
+     <Compile Include="Assets\Script\Tooltip.cs" />
      <Compile Include="Assets\Script\TrueInventory.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
