@@ -47,52 +47,58 @@ public class GatherResource : MonoBehaviour {
 	}
 
 	void OnMouseDown() {
-		if (gameObject.name == "SUMATERA") {
-			tempSilver += 1;
-			PlayerPrefs.SetInt ("Silver", tempSilver);
-			silverT.text = tempSilver.ToString ();
+		if (EnergyScript.CurrEnergy >= 1) {
+			EnergyScript.CurrEnergy--; 
+			if (gameObject.name == "SUMATERA") {
+				tempSilver += 1;
+				PlayerPrefs.SetInt ("Silver", tempSilver);
+				silverT.text = tempSilver.ToString ();
 
 
 
-			//Showing Cooper for 1 second
-			/*silver.transform.localScale = new Vector3 (0.25f, 0.25f, 0.25f);
+				//Showing Cooper for 1 second
+				/*silver.transform.localScale = new Vector3 (0.25f, 0.25f, 0.25f);
 			Vector3 location = new Vector3 (-8.5f, -0.06451121f, -9.959233f);
 			GameObject clone = (GameObject)Instantiate (silver, location, transform.rotation);
 			Destroy (clone, 5.0f);*/
-			//GW GK TW INI KENAPA GK NONGOL DI LAYAR GAME NYE, DI SCENE KELUAR 
-		
-		} else if (gameObject.name == "KALIMANTAN") {
-			tempIron += 1;
-			PlayerPrefs.SetInt ("Iron", tempIron);
-			ironT.text = tempIron.ToString ();
-		
-		} else if (gameObject.name == "SULAWESI") {
-			tempCooper += 1;
-			PlayerPrefs.SetInt ("Cooper", tempCooper);
-			cooperT.text = tempCooper.ToString ();
-		
-		} else if (gameObject.name == "PAPUA") {
-			tempGold += 1;
-			PlayerPrefs.SetInt ("Gold", tempGold);
-			goldT.text = tempGold.ToString ();
-		
-		} else if (gameObject.name == "NTT NTB") {
-			tempJati += 1;
-			tempMahoni += 1;
+				//GW GK TW INI KENAPA GK NONGOL DI LAYAR GAME NYE, DI SCENE KELUAR 
 
-			PlayerPrefs.SetInt ("Jati", tempJati);
-			PlayerPrefs.SetInt ("Mahoni", tempMahoni);
+			} else if (gameObject.name == "KALIMANTAN") {
+				tempIron += 1;
+				PlayerPrefs.SetInt ("Iron", tempIron);
+				ironT.text = tempIron.ToString ();
 
-			woodT.text = tempWood.ToString ();
+			} else if (gameObject.name == "SULAWESI") {
+				tempCooper += 1;
+				PlayerPrefs.SetInt ("Cooper", tempCooper);
+				cooperT.text = tempCooper.ToString ();
 
-		} else if (gameObject.name == "MALUKU") {
-			tempMeranti += 1;
-			tempUlin += 1;
+			} else if (gameObject.name == "PAPUA") {
+				tempGold += 1;
+				PlayerPrefs.SetInt ("Gold", tempGold);
+				goldT.text = tempGold.ToString ();
 
-			PlayerPrefs.SetInt ("Meranti", tempMeranti);
-			PlayerPrefs.SetInt ("Ulin", tempUlin);
+			} else if (gameObject.name == "NTT NTB") {
+				tempJati += 1;
+				tempMahoni += 1;
 
-			woodT.text = tempWood.ToString ();
+				PlayerPrefs.SetInt ("Jati", tempJati);
+				PlayerPrefs.SetInt ("Mahoni", tempMahoni);
+
+				woodT.text = tempWood.ToString ();
+
+			} else if (gameObject.name == "MALUKU") {
+				tempMeranti += 1;
+				tempUlin += 1;
+
+				PlayerPrefs.SetInt ("Meranti", tempMeranti);
+				PlayerPrefs.SetInt ("Ulin", tempUlin);
+
+				woodT.text = tempWood.ToString ();
+			}
+
 		}
+
+
 	}
 }
