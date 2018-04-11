@@ -1,0 +1,62 @@
+[
+    {
+        "slotID": 1,
+        "available": true,
+        "id": -1,
+        "title": "",
+        "stats": {
+            "lethality": 0,
+            "durability": 0,
+            "weight": 0,
+            "cost": 0
+        },
+        "slug": "",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "slotID": 2,
+        "available": true,
+        "id": -1,
+        "title": "",
+        "stats": {
+            "lethality": 0,
+            "durability": 0,
+            "weight": 0,
+            "cost": 0
+        },
+        "slug": "",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "slotID": 3,
+        "available": true,
+        "id": -1,
+        "title": "",
+        "stats": {
+            "lethality": 0,
+            "durability": 0,
+            "weight": 0,
+            "cost": 0
+        },
+        "slug": "",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "slotID": 4,
+        "available": true,
+        "id": -1,
+        "title": "",
+        "stats": {
+            "lethality": 0,
+            "durability": 0,
+            "weight": 0,
+            "cost": 0
+        },
+        "slug": "",
+        "stackable": false,
+        "description": ""
+    }
+]

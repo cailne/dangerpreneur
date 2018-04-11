@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{349E8FBD-F22D-CF3A-16F8-CCCF9941C019}</ProjectGuid>
+    <ProjectGuid>{1639A59D-2B57-F896-5575-88FE5D1F5B3C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,9 +54,17 @@
      <Compile Include="Assets\Script\AddInventory.cs" />
      <Compile Include="Assets\Script\CamControl.cs" />
      <Compile Include="Assets\Script\ClickInput.cs" />
+     <Compile Include="Assets\Script\Craft.cs" />
+     <Compile Include="Assets\Script\CraftingManager.cs" />
      <Compile Include="Assets\Script\EnergyScript.cs" />
+     <Compile Include="Assets\Script\GatherResource.cs" />
+     <Compile Include="Assets\Script\HitBoxTEMP.cs" />
+     <Compile Include="Assets\Script\InventoryDatabase.cs" />
      <Compile Include="Assets\Script\ItemData.cs" />
-     <Compile Include="Assets\Script\ItemDatabase.cs" />
+     <Compile Include="Assets\Script\MasterItem.cs" />
+     <Compile Include="Assets\Script\MasterSceneChange.cs" />
+     <Compile Include="Assets\Script\PersistentVariables.cs" />
+     <Compile Include="Assets\Script\Recruit.cs" />
      <Compile Include="Assets\Script\Slot.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
      <Compile Include="Assets\Script\Tooltip.cs" />
@@ -163,7 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{90796405-5169-A2AD-9FB8-4A338CA2878D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{0E2FCDF9-888F-7763-E367-E798E38192BF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

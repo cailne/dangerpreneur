@@ -18,7 +18,7 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	void Start(){
 		//define variables
 		inv = GameObject.Find("Inv Script").GetComponent<TrueInventory>();
-		tooltip = inv.GetComponent<Tooltip>();
+		tooltip = GameObject.Find("Inv Script").GetComponent<Tooltip>();
 	}
 
     public void OnBeginDrag(PointerEventData eventData)

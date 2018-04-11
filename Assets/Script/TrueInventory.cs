@@ -7,7 +7,7 @@ public class TrueInventory : MonoBehaviour {
 
 	GameObject inventoryPanel;
     GameObject slotPanel;
-    ItemDatabase database;
+    InventoryDatabase database;
     public GameObject inventorySlot;
     public GameObject inventoryItem;
 
@@ -17,7 +17,7 @@ public class TrueInventory : MonoBehaviour {
 
     void Start(){
         //define variables
-        database = GetComponent<ItemDatabase>();
+        database = GetComponent<InventoryDatabase>();
 
         //slotAmount means the inventory slot
         slotAmount = 15;
@@ -32,6 +32,12 @@ public class TrueInventory : MonoBehaviour {
             slots[i].transform.SetParent(slotPanel.transform); //set the cloned slots's parent into slotpanel
             slots[i].transform.localScale = Vector3.one; //set the scale to 1, it gets bigger without it, idk
         }
+
+        //AddItem(4);
+
+        if(PlayerPrefs.GetInt("craft") > 0){
+            AddItem(4);
+        }
     }
 
     public void AddItem(int id){
@@ -41,7 +47,7 @@ public class TrueInventory : MonoBehaviour {
         //this checks if the item is stackable
         //which is useless, since the items is always different
         //just saved this for the future, not going to explain it
-        if (itemToAdd.Stackable && CheckInvItemAvailable(itemToAdd)){
+        /*if (itemToAdd.Stackable && CheckInvItemAvailable(itemToAdd)){
             for (int i = 0; i < items.Count; i++){
                 if (items[i].ID == id){
                     ItemData data = slots[i].transform.GetChild(0).GetComponent<ItemData>();
@@ -50,7 +56,7 @@ public class TrueInventory : MonoBehaviour {
                     break;
                 }
             }
-        }else{
+        }else{*/
             //this run if the item is not stackable
                 //why using for? we're just going to add 1 item
                 //well, we don't know where the empty slot is, so we search it by using for loop
@@ -65,13 +71,14 @@ public class TrueInventory : MonoBehaviour {
                         //===================================================================================
                         itemObj.transform.SetParent(slots[i].transform); //set the item's parent to inventory slot
                         itemObj.transform.position = Vector2.zero; //centering the item position with slot
-                        itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite; //calling the item sprite
-                        itemObj.name = itemToAdd.Title; //it renames gameobject in unity hierarchy, looks neat
+                        itemObj.transform.localScale = Vector3.one;
+                        //itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite; //calling the item sprite
+                        //itemObj.name = itemToAdd.Title; //it renames gameobject in unity hierarchy, looks neat
 
                         break; //if we already add the item, break the loop!
                     }
                 }
-        }
+        //}
     }
 
     //this too is for stackable items, not going to explain it
