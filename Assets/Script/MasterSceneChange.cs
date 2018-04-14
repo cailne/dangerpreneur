@@ -16,5 +16,8 @@ public class MasterSceneChange : MonoBehaviour {
 	public void ToGameplay(){
 		SceneManager.LoadScene("S1");
 	}
-	
+
+	public void ToBlackMarket() {
+		SceneManager.LoadScene ("BlackMarket");
+	}
 }

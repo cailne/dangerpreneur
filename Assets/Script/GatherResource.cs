@@ -10,8 +10,6 @@ public class GatherResource : MonoBehaviour {
 	private int tempCooper, tempGold, tempIron, tempRock, tempSilver, tempWood;
 	public Text cooperT, goldT, ironT, rockT, silverT, woodT;
 
-	private int tempJati, tempMahoni, tempMeranti, tempUlin;
-
 	void Awake() { //SUPAYA GA NAMBAH TEROS
 		PlayerPrefs.DeleteAll ();
 		/*PlayerPrefs.DeleteKey ("Cooper");
@@ -32,21 +30,12 @@ public class GatherResource : MonoBehaviour {
 		tempIron = PlayerPrefs.GetInt ("Iron", 0);
 		tempRock = PlayerPrefs.GetInt ("Rock", 0);
 		tempSilver = PlayerPrefs.GetInt ("Silver", 0);
-		//tempWood = PlayerPrefs.GetInt ("Wood", 0);
+		tempWood = PlayerPrefs.GetInt ("Wood", 0);
 
-		//WOOD = JATI + MAHONI + MERANTI + ULIN
-		tempJati = PlayerPrefs.GetInt("Jati", 0);
-		tempMahoni = PlayerPrefs.GetInt ("Mahoni", 0);
-		tempMeranti = PlayerPrefs.GetInt ("Meranti", 0);
-		tempUlin = PlayerPrefs.GetInt ("Ulin", 0);
 
 	}
 
-	void Update() {
-		tempWood = tempJati + tempMahoni + tempMeranti + tempUlin;
-	}
-
-	void OnMouseDown() {
+	void OnMouseUp() {
 		if (EnergyScript.CurrEnergy >= 1) {
 			EnergyScript.CurrEnergy--; 
 			if (gameObject.name == "SUMATERA") {
@@ -79,26 +68,36 @@ public class GatherResource : MonoBehaviour {
 				goldT.text = tempGold.ToString ();
 
 			} else if (gameObject.name == "NTT NTB") {
-				tempJati += 1;
-				tempMahoni += 1;
-
-				PlayerPrefs.SetInt ("Jati", tempJati);
-				PlayerPrefs.SetInt ("Mahoni", tempMahoni);
+				tempWood += 1;
+				PlayerPrefs.SetInt ("Wood", tempWood);
 
 				woodT.text = tempWood.ToString ();
 
 			} else if (gameObject.name == "MALUKU") {
-				tempMeranti += 1;
-				tempUlin += 1;
-
-				PlayerPrefs.SetInt ("Meranti", tempMeranti);
-				PlayerPrefs.SetInt ("Ulin", tempUlin);
+				tempWood += 1;
+				PlayerPrefs.SetInt ("Wood", tempWood);
 
 				woodT.text = tempWood.ToString ();
+			
+			} else if (gameObject.name == "JAWA") {
+				tempRock += 1;
+				PlayerPrefs.SetInt ("Rock", tempRock);
+
+				rockT.text = tempRock.ToString ();
 			}
 
 		}
 
 
+	}
+
+
+	public GameObject popUP;
+	void OnMouseEnter() {
+		popUP.SetActive (true);
+	}
+
+	void OnMouseExit() {
+		popUP.SetActive (false);
 	}
 }
