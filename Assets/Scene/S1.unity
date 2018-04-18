@@ -268,17 +268,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
-  gold: {fileID: 0}
-  iron: {fileID: 0}
-  rock: {fileID: 0}
-  silver: {fileID: 0}
+  cooper: {fileID: 678530497}
+  gold: {fileID: 66754479}
+  iron: {fileID: 1568582164}
+  rock: {fileID: 2091521542}
+  silver: {fileID: 1854485495}
   wood: {fileID: 1415025974}
-  cooperT: {fileID: 0}
-  goldT: {fileID: 0}
-  ironT: {fileID: 0}
-  rockT: {fileID: 0}
-  silverT: {fileID: 0}
+  cooperT: {fileID: 7846355}
+  goldT: {fileID: 801943160}
+  ironT: {fileID: 2052007971}
+  rockT: {fileID: 339529620}
+  silverT: {fileID: 619991778}
   woodT: {fileID: 565931660}
   popUP: {fileID: 260889577}
 --- !u!1 &66754479
@@ -627,17 +627,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooper: {fileID: 678530497}
-  gold: {fileID: 0}
-  iron: {fileID: 0}
-  rock: {fileID: 0}
-  silver: {fileID: 0}
-  wood: {fileID: 0}
+  gold: {fileID: 66754479}
+  iron: {fileID: 1568582164}
+  rock: {fileID: 2091521542}
+  silver: {fileID: 1854485495}
+  wood: {fileID: 1415025974}
   cooperT: {fileID: 7846355}
-  goldT: {fileID: 0}
-  ironT: {fileID: 0}
-  rockT: {fileID: 0}
-  silverT: {fileID: 0}
-  woodT: {fileID: 0}
+  goldT: {fileID: 801943160}
+  ironT: {fileID: 2052007971}
+  rockT: {fileID: 339529620}
+  silverT: {fileID: 619991778}
+  woodT: {fileID: 565931660}
   popUP: {fileID: 1994452321}
 --- !u!1 &139428452
 GameObject:
@@ -898,18 +898,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
+  cooper: {fileID: 678530497}
   gold: {fileID: 66754479}
-  iron: {fileID: 0}
-  rock: {fileID: 0}
-  silver: {fileID: 0}
-  wood: {fileID: 0}
-  cooperT: {fileID: 0}
+  iron: {fileID: 1568582164}
+  rock: {fileID: 2091521542}
+  silver: {fileID: 1854485495}
+  wood: {fileID: 1415025974}
+  cooperT: {fileID: 7846355}
   goldT: {fileID: 801943160}
-  ironT: {fileID: 0}
-  rockT: {fileID: 0}
-  silverT: {fileID: 0}
-  woodT: {fileID: 0}
+  ironT: {fileID: 2052007971}
+  rockT: {fileID: 339529620}
+  silverT: {fileID: 619991778}
+  woodT: {fileID: 565931660}
   popUP: {fileID: 139428452}
 --- !u!1 &260889577
 GameObject:
@@ -1832,17 +1832,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
-  gold: {fileID: 0}
-  iron: {fileID: 0}
-  rock: {fileID: 0}
-  silver: {fileID: 0}
+  cooper: {fileID: 678530497}
+  gold: {fileID: 66754479}
+  iron: {fileID: 1568582164}
+  rock: {fileID: 2091521542}
+  silver: {fileID: 1854485495}
   wood: {fileID: 1415025974}
-  cooperT: {fileID: 0}
-  goldT: {fileID: 0}
-  ironT: {fileID: 0}
-  rockT: {fileID: 0}
-  silverT: {fileID: 0}
+  cooperT: {fileID: 7846355}
+  goldT: {fileID: 801943160}
+  ironT: {fileID: 2052007971}
+  rockT: {fileID: 339529620}
+  silverT: {fileID: 619991778}
   woodT: {fileID: 565931660}
   popUP: {fileID: 266276470}
 --- !u!1 &678530497
@@ -2144,18 +2144,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
-  gold: {fileID: 0}
-  iron: {fileID: 0}
+  cooper: {fileID: 678530497}
+  gold: {fileID: 66754479}
+  iron: {fileID: 1568582164}
   rock: {fileID: 2091521542}
-  silver: {fileID: 0}
-  wood: {fileID: 0}
-  cooperT: {fileID: 0}
-  goldT: {fileID: 0}
-  ironT: {fileID: 0}
+  silver: {fileID: 1854485495}
+  wood: {fileID: 1415025974}
+  cooperT: {fileID: 7846355}
+  goldT: {fileID: 801943160}
+  ironT: {fileID: 2052007971}
   rockT: {fileID: 339529620}
-  silverT: {fileID: 0}
-  woodT: {fileID: 0}
+  silverT: {fileID: 619991778}
+  woodT: {fileID: 565931660}
   popUP: {fileID: 277690822}
 --- !u!1 &801943158
 GameObject:
@@ -3994,18 +3994,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
-  gold: {fileID: 0}
+  cooper: {fileID: 678530497}
+  gold: {fileID: 66754479}
   iron: {fileID: 1568582164}
-  rock: {fileID: 0}
-  silver: {fileID: 0}
-  wood: {fileID: 0}
-  cooperT: {fileID: 0}
-  goldT: {fileID: 0}
+  rock: {fileID: 2091521542}
+  silver: {fileID: 1854485495}
+  wood: {fileID: 1415025974}
+  cooperT: {fileID: 7846355}
+  goldT: {fileID: 801943160}
   ironT: {fileID: 2052007971}
-  rockT: {fileID: 0}
-  silverT: {fileID: 0}
-  woodT: {fileID: 0}
+  rockT: {fileID: 339529620}
+  silverT: {fileID: 619991778}
+  woodT: {fileID: 565931660}
   popUP: {fileID: 1240647185}
 --- !u!1 &1989371894
 GameObject:
@@ -4645,16 +4645,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0207028dde8d5ca4e9c1edb2171f3052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooper: {fileID: 0}
-  gold: {fileID: 0}
-  iron: {fileID: 0}
-  rock: {fileID: 0}
+  cooper: {fileID: 678530497}
+  gold: {fileID: 66754479}
+  iron: {fileID: 1568582164}
+  rock: {fileID: 2091521542}
   silver: {fileID: 1854485495}
-  wood: {fileID: 0}
-  cooperT: {fileID: 0}
-  goldT: {fileID: 0}
-  ironT: {fileID: 0}
-  rockT: {fileID: 0}
+  wood: {fileID: 1415025974}
+  cooperT: {fileID: 7846355}
+  goldT: {fileID: 801943160}
+  ironT: {fileID: 2052007971}
+  rockT: {fileID: 339529620}
   silverT: {fileID: 619991778}
-  woodT: {fileID: 0}
+  woodT: {fileID: 565931660}
   popUP: {fileID: 941202516}

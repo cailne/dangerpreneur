@@ -11,7 +11,7 @@ public class GatherResource : MonoBehaviour {
 	public Text cooperT, goldT, ironT, rockT, silverT, woodT;
 
 	void Awake() { //SUPAYA GA NAMBAH TEROS
-		PlayerPrefs.DeleteAll ();
+		//PlayerPrefs.DeleteAll ();
 		/*PlayerPrefs.DeleteKey ("Cooper");
 		PlayerPrefs.DeleteKey ("Gold");
 		PlayerPrefs.DeleteKey ("Iron");
@@ -41,7 +41,7 @@ public class GatherResource : MonoBehaviour {
 			if (gameObject.name == "SUMATERA") {
 				tempSilver += 1;
 				PlayerPrefs.SetInt ("Silver", tempSilver);
-				silverT.text = tempSilver.ToString ();
+				//silverT.text = tempSilver.ToString ();
 
 
 
@@ -55,35 +55,35 @@ public class GatherResource : MonoBehaviour {
 			} else if (gameObject.name == "KALIMANTAN") {
 				tempIron += 1;
 				PlayerPrefs.SetInt ("Iron", tempIron);
-				ironT.text = tempIron.ToString ();
+				//ironT.text = tempIron.ToString ();
 
 			} else if (gameObject.name == "SULAWESI") {
 				tempCooper += 1;
 				PlayerPrefs.SetInt ("Cooper", tempCooper);
-				cooperT.text = tempCooper.ToString ();
+				//cooperT.text = tempCooper.ToString ();
 
 			} else if (gameObject.name == "PAPUA") {
 				tempGold += 1;
 				PlayerPrefs.SetInt ("Gold", tempGold);
-				goldT.text = tempGold.ToString ();
+				//goldT.text = tempGold.ToString ();
 
 			} else if (gameObject.name == "NTT NTB") {
 				tempWood += 1;
 				PlayerPrefs.SetInt ("Wood", tempWood);
 
-				woodT.text = tempWood.ToString ();
+				//woodT.text = tempWood.ToString ();
 
 			} else if (gameObject.name == "MALUKU") {
 				tempWood += 1;
 				PlayerPrefs.SetInt ("Wood", tempWood);
 
-				woodT.text = tempWood.ToString ();
+				//woodT.text = tempWood.ToString ();
 			
 			} else if (gameObject.name == "JAWA") {
 				tempRock += 1;
 				PlayerPrefs.SetInt ("Rock", tempRock);
 
-				rockT.text = tempRock.ToString ();
+				//rockT.text = tempRock.ToString ();
 			}
 
 		}
@@ -91,6 +91,21 @@ public class GatherResource : MonoBehaviour {
 
 	}
 
+	void Update() {
+		tempCooper = PlayerPrefs.GetInt ("Cooper", 0);
+		tempGold = PlayerPrefs.GetInt ("Gold", 0);
+		tempIron = PlayerPrefs.GetInt ("Iron", 0);
+		tempRock = PlayerPrefs.GetInt ("Rock", 0);
+		tempSilver = PlayerPrefs.GetInt ("Silver", 0);
+		tempWood = PlayerPrefs.GetInt ("Wood", 0);
+
+		cooperT.text = tempCooper.ToString();
+		goldT.text = tempGold.ToString();
+		ironT.text = tempIron.ToString();
+		rockT.text = tempRock.ToString();
+		silverT.text = tempSilver.ToString();
+		woodT.text = tempWood.ToString();
+	}
 
 	public GameObject popUP;
 	void OnMouseEnter() {

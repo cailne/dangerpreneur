@@ -13,8 +13,9 @@ public class EnergyScript : MonoBehaviour {
 	float counter;
 
 
+
 	private void Start() {
-		CurrEnergy = 10;
+		CurrEnergy = PlayerPrefs.GetInt ("EnergyLeft", 10);
 		EnergySlider.value = 0f;
 		counter = 0;
 	}
@@ -57,5 +58,7 @@ public class EnergyScript : MonoBehaviour {
 		}*/
 
 		TextEnergy.text = "Energy : " + CurrEnergy + " / 10";
+		PlayerPrefs.SetInt ("EnergyLeft", CurrEnergy);
+		
 	}
 }

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Script\ClickInput.cs" />
      <Compile Include="Assets\Script\Craft.cs" />
      <Compile Include="Assets\Script\CraftingManager.cs" />
+     <Compile Include="Assets\Script\DefyBMMgr.cs" />
      <Compile Include="Assets\Script\EnergyScript.cs" />
      <Compile Include="Assets\Script\GatherResource.cs" />
      <Compile Include="Assets\Script\HitBoxTEMP.cs" />
@@ -64,8 +65,13 @@
      <Compile Include="Assets\Script\ItemData.cs" />
      <Compile Include="Assets\Script\MasterItem.cs" />
      <Compile Include="Assets\Script\MasterSceneChange.cs" />
+     <Compile Include="Assets\Script\MonthAndYear.cs" />
      <Compile Include="Assets\Script\PersistentVariables.cs" />
+     <Compile Include="Assets\Script\PickMaterial.cs" />
      <Compile Include="Assets\Script\Recruit.cs" />
+     <Compile Include="Assets\Script\SaveCompanyName.cs" />
+     <Compile Include="Assets\Script\ShopMgr.cs" />
+     <Compile Include="Assets\Script\ShowMaterial.cs" />
      <Compile Include="Assets\Script\Slot.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
      <Compile Include="Assets\Script\Tooltip.cs" />
