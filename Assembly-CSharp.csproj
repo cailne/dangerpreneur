@@ -58,6 +58,7 @@
      <Compile Include="Assets\Script\Craft.cs" />
      <Compile Include="Assets\Script\CraftingManager.cs" />
      <Compile Include="Assets\Script\DefyBMMgr.cs" />
+     <Compile Include="Assets\Script\DisplayResource.cs" />
      <Compile Include="Assets\Script\EnergyScript.cs" />
      <Compile Include="Assets\Script\GatherResource.cs" />
      <Compile Include="Assets\Script\HitBoxTEMP.cs" />
