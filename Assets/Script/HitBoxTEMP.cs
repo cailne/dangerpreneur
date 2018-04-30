@@ -25,10 +25,19 @@ public class HitBoxTEMP : MonoBehaviour {
 		} else {
 			chooseMaterial.gameObject.SetActive(false);
 		}
-
+		//Weapon ID 
+		//1 = Jenawi, 2 = Siwar, 3 = Trisula
 		switch (gameObject.name) {
 		case "Jenawi":
 			PlayerPrefs.SetInt ("WeaponID", 1);
+			break;
+
+		case "Siwar":
+			PlayerPrefs.SetInt ("WeaponID", 2);
+			break;
+
+		case "Trisula" :
+			PlayerPrefs.SetInt ("WeaponID", 3);
 			break;
 		}
 	}
