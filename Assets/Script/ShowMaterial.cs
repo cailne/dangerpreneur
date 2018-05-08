@@ -14,6 +14,7 @@ public class ShowMaterial : MonoBehaviour {
 	public GameObject JenawiC, JenawiG, JenawiI, JenawiS, JenawiR;
 	public GameObject SiwarC, SiwarG, SiwarI, SiwarS, SiwarR;
 	public GameObject TrisulaC, TrisulaG, TrisulaI, TrisulaS, TrisulaR;
+	public GameObject GolokC, GolokG, GolokI, GolokS, GolokR;
 
 
 	private void Awake() {
@@ -89,6 +90,27 @@ public class ShowMaterial : MonoBehaviour {
 				break;
 			case 5:
 				TrisulaR.SetActive (true);
+				break;
+
+			}
+			break;
+
+		case 4: //Golok
+			switch (MaterialID) {
+			case 1:
+				GolokC.SetActive (true);
+				break;
+			case 2:
+				GolokG.SetActive (true);
+				break;
+			case 3:
+				GolokI.SetActive (true);
+				break;
+			case 4:
+				GolokS.SetActive (true);
+				break;
+			case 5:
+				GolokR.SetActive (true);
 				break;
 
 			}
