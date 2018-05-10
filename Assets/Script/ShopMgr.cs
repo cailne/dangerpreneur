@@ -59,6 +59,7 @@ public class ShopMgr : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timeRemaining -= Time.deltaTime;
+		ShowStock ();
 	}
 
 	void ReadDBResource(){
@@ -171,7 +172,7 @@ public class ShopMgr : MonoBehaviour {
 
 	private void OnGUI(){
 		if (timeRemaining > 0) {
-			refreshTime.text = "Time before restock : " + (int)timeRemaining;
+			refreshTime.text = "Restock in : " + (int)timeRemaining;
 		} else {
 			Start ();
 		}
