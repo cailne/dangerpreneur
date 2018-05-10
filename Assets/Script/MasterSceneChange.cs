@@ -20,4 +20,8 @@ public class MasterSceneChange : MonoBehaviour {
 	public void ToBlackMarket() {
 		SceneManager.LoadScene ("BlackMarket");
 	}
+
+	public void ToShop() {
+		SceneManager.LoadScene ("Shop");
+	}
 }

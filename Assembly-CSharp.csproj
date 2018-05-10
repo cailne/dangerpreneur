@@ -68,6 +68,7 @@
      <Compile Include="Assets\Script\ItemData.cs" />
      <Compile Include="Assets\Script\MasterItem.cs" />
      <Compile Include="Assets\Script\MasterSceneChange.cs" />
+     <Compile Include="Assets\Script\MoneyScript.cs" />
      <Compile Include="Assets\Script\MonthAndYear.cs" />
      <Compile Include="Assets\Script\PersistentVariables.cs" />
      <Compile Include="Assets\Script\PickMaterial.cs" />
