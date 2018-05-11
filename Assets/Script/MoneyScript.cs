@@ -15,6 +15,7 @@ public class MoneyScript : MonoBehaviour {
 
 	void Update() {
 		MoneyText.text = currentMoney.ToString ();
+
 	}
 
 

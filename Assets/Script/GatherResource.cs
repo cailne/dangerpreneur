@@ -10,28 +10,20 @@ public class GatherResource : MonoBehaviour {
 	private int tempCooper, tempGold, tempIron, tempRock, tempSilver, tempWood;
 	public Text cooperT, goldT, ironT, rockT, silverT, woodT;
 
+
+
 	void Awake() { //SUPAYA GA NAMBAH TEROS
 		//PlayerPrefs.DeleteAll ();
-		/*PlayerPrefs.DeleteKey ("Cooper");
-		PlayerPrefs.DeleteKey ("Gold");
-		PlayerPrefs.DeleteKey ("Iron");
-		PlayerPrefs.DeleteKey ("Rock");
-		PlayerPrefs.DeleteKey ("Silver");
-		PlayerPrefs.DeleteKey ("Jati");
-		PlayerPrefs.DeleteKey ("Mahoni");
-		PlayerPrefs.DeleteKey ("Meranti");
-		PlayerPrefs.DeleteKey ("Ulin");*/
+	
 	}
 
 	void Start() {
-		
 		tempCooper = PlayerPrefs.GetInt ("Cooper", 0);
 		tempGold = PlayerPrefs.GetInt ("Gold", 0);
 		tempIron = PlayerPrefs.GetInt ("Iron", 0);
 		tempRock = PlayerPrefs.GetInt ("Rock", 0);
 		tempSilver = PlayerPrefs.GetInt ("Silver", 0);
 		tempWood = PlayerPrefs.GetInt ("Wood", 0);
-
 
 	}
 
@@ -105,6 +97,8 @@ public class GatherResource : MonoBehaviour {
 		rockT.text = tempRock.ToString();
 		silverT.text = tempSilver.ToString();
 		woodT.text = tempWood.ToString();
+
+
 	}
 
 	public GameObject popUP;
