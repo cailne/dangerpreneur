@@ -6,15 +6,15 @@ using UnityEngine.UI;
 public class MoneyScript : MonoBehaviour {
 
 	public Text MoneyText;
-	public int defaultMoney;
-	int currentMoney;
+	public static int defaultMoney;
 
-	void Awake() {
-		currentMoney = PlayerPrefs.GetInt ("Money", defaultMoney);
+
+	void Start() {
+		defaultMoney = 5000;
 	}
 
 	void Update() {
-		MoneyText.text = currentMoney.ToString ();
+		MoneyText.text = PlayerPrefs.GetInt("Money", defaultMoney).ToString ();
 
 	}
 

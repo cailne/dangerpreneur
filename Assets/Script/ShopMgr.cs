@@ -60,6 +60,8 @@ public class ShopMgr : MonoBehaviour {
 	void Update () {
 		timeRemaining -= Time.deltaTime;
 		ShowStock ();
+		ShowPrice ();
+		//Debug.Log ("Current price of iron is : " + IronPrice);
 	}
 
 	void ReadDBResource(){

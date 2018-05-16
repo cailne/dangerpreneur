@@ -67,6 +67,7 @@
      <Compile Include="Assets\Script\CraftingManager.cs" />
      <Compile Include="Assets\Script\DefyBMMgr.cs" />
      <Compile Include="Assets\Script\DisplayCost.cs" />
+     <Compile Include="Assets\Script\DisplayMoney.cs" />
      <Compile Include="Assets\Script\DisplayResource.cs" />
      <Compile Include="Assets\Script\EmployeeManager.cs" />
      <Compile Include="Assets\Script\EnergyScript.cs" />

@@ -11,16 +11,27 @@ public class BuyWood : MonoBehaviour {
 	public int holdWood;
 	void Awake(){
 		AccessScript = GameObject.FindObjectOfType<ShopMgr> ();
-		holdWood = PlayerPrefs.GetInt ("Wood", 0);
+		//holdWood = PlayerPrefs.GetInt ("Wood", 0);
 	}
 
 	public void UpdateValue(){
-		if (AccessScript.Wood > 0) {
-			AccessScript.Wood -= 1;
-			holdWood++;
-			PlayerPrefs.SetInt ("Wood", holdWood);
+
+		if (PlayerPrefs.GetInt ("Money", MoneyScript.defaultMoney) - AccessScript.WoodPrice >= 0) {
+			if (AccessScript.Wood > 0) {
+				AccessScript.Wood -= 1;
+				holdWood++;
+				PlayerPrefs.SetInt ("Wood", holdWood);
+				PlayerPrefs.SetInt ("Money", PlayerPrefs.GetInt ("Money", MoneyScript.defaultMoney) - AccessScript.WoodPrice);
+			} else {
+				Debug.Log ("Stock Depleted");
+			}
 		} else {
-			Debug.Log ("Stock Depleted");
+			Debug.Log ("NOT ENOUGH MONEY");
 		}
+	
+	}
+
+	void Update() {
+		holdWood = PlayerPrefs.GetInt ("Wood", 0);
 	}
 }
