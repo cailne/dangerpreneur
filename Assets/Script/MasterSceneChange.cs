@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class MasterSceneChange : MonoBehaviour {
+
+	public Timer t;
+
+	public void ToGameplay(){
+		SceneManager.LoadScene("S1");
+	}
 	public void ToCrafting(){
 		SceneManager.LoadScene("Crafting");
 	}
@@ -13,9 +21,7 @@ public class MasterSceneChange : MonoBehaviour {
 	public void ToInv(){
 		SceneManager.LoadScene("Inv");
 	}
-	public void ToGameplay(){
-		SceneManager.LoadScene("S1");
-	}
+	
 
 	public void ToBlackMarket() {
 		SceneManager.LoadScene ("BlackMarket");
@@ -23,5 +29,29 @@ public class MasterSceneChange : MonoBehaviour {
 
 	public void ToShop() {
 		SceneManager.LoadScene ("Shop");
+	}
+
+	public void ToCraftingFromS1(){
+		SceneManager.LoadScene("Crafting");
+		float g = t.TrueTime;
+		PlayerPrefs.SetFloat("Time",g);
+	}
+	public void ToInvFromS1(){
+		SceneManager.LoadScene("Inv");
+		float g = t.TrueTime;
+		PlayerPrefs.SetFloat("Time",g);
+	}
+	
+
+	public void ToBlackMarketFromS1() {
+		SceneManager.LoadScene ("BlackMarket");
+		float g = t.TrueTime;
+		PlayerPrefs.SetFloat("Time",g);
+	}
+
+	public void ToShopFromS1() {
+		SceneManager.LoadScene ("Shop");
+		float g = t.TrueTime;
+		PlayerPrefs.SetFloat("Time",g);
 	}
 }

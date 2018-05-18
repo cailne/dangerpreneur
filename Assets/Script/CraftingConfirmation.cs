@@ -7,6 +7,8 @@ public class CraftingConfirmation : MonoBehaviour {
 
 	private int tempCooper, tempGold, tempIron, tempRock, tempSilver, tempWood;
 
+	//public PersistentVariables pv;
+
 	public Slider loading;
 	private int MaterialID;
 	// 1 = Copper, 2 = Gold, 3 = Iron, 4 = Silver, 5 = Rock
@@ -37,6 +39,7 @@ public class CraftingConfirmation : MonoBehaviour {
 				AllowCraft = true;
 				tempCooper--;
 				PlayerPrefs.SetInt ("Cooper", tempCooper);
+
 			}
 			break;
 
@@ -98,6 +101,72 @@ public class CraftingConfirmation : MonoBehaviour {
 
 			if (counter >= loadingTime + delayBeforeDisappear) {
 				loading.gameObject.SetActive (false);
+				switch(PlayerPrefs.GetInt("WeaponID")){
+					case 1:
+						if (MaterialID == 1){
+							PlayerPrefs.SetInt("ItemID", 50);
+							
+						}else if (MaterialID == 2){
+							PlayerPrefs.SetInt("ItemID", 53);
+							
+						}else if (MaterialID == 3){
+							PlayerPrefs.SetInt("ItemID", 52);
+
+						}else if (MaterialID == 4){
+							PlayerPrefs.SetInt("ItemID", 51);
+
+						}else PlayerPrefs.SetInt("ItemID", 54);
+					break;
+
+					case 2:
+						if (MaterialID == 1){
+							PlayerPrefs.SetInt("ItemID", 65);
+							
+						}else if (MaterialID == 2){
+							PlayerPrefs.SetInt("ItemID", 68);
+							
+						}else if (MaterialID == 3){
+							PlayerPrefs.SetInt("ItemID", 67);
+
+						}else if (MaterialID == 4){
+							PlayerPrefs.SetInt("ItemID", 66);
+
+						}else PlayerPrefs.SetInt("ItemID", 69);
+					break;
+
+					case 3:
+						if (MaterialID == 1){
+							PlayerPrefs.SetInt("ItemID", 75);
+							
+						}else if (MaterialID == 2){
+							PlayerPrefs.SetInt("ItemID", 78);
+							
+						}else if (MaterialID == 3){
+							PlayerPrefs.SetInt("ItemID", 77);
+
+						}else if (MaterialID == 4){
+							PlayerPrefs.SetInt("ItemID", 76);
+
+						}else PlayerPrefs.SetInt("ItemID", 79);
+					break;
+
+					case 4:
+						if (MaterialID == 1){
+							PlayerPrefs.SetInt("ItemID", 15);
+							
+						}else if (MaterialID == 2){
+							PlayerPrefs.SetInt("ItemID", 18);
+							
+						}else if (MaterialID == 3){
+							PlayerPrefs.SetInt("ItemID", 17);
+
+						}else if (MaterialID == 4){
+							PlayerPrefs.SetInt("ItemID", 16);
+
+						}else PlayerPrefs.SetInt("ItemID", 19);
+					break;
+				}
+				PersistentVariables.i.addedItem += 1;
 				AllowCraft = false;
 			}
 		}

@@ -1,222 +1,1106 @@
 [
     {
         "id": 0,
-        "title": "Badik Tumbuk Lado",
+        "title": "Copper Badik Tumbuk Lado",
         "stats": {
-            "lethality": 38,
-            "durability": 41,
+            "lethality": 37,
+            "durability": 52,
             "weight": 35,
             "cost": 405
         },
-        "slug": "badik_tumbuk_lado",
+        "slug": "copper_badik_tumbuk_lado",
         "stackable": false,
         "description": ""
     },
     {
         "id": 1,
-        "title": "Celurit",
+        "title": "Silver Badik Tumbuk Lado",
         "stats": {
             "lethality": 63,
-            "durability": 12,
-            "weight": 27,
-            "cost": 285
+            "durability": 24,
+            "weight": 29,
+            "cost": 406
         },
-        "slug": "celurit",
+        "slug": "silver_badik_tumbuk_lado",
         "stackable": false,
         "description": ""
     },
     {
         "id": 2,
-        "title": "Dohong",
+        "title": "Iron Badik Tumbuk Lado",
         "stats": {
-            "lethality": 9,
-            "durability": 79,
-            "weight": 36,
-            "cost": 475
+            "lethality": 44,
+            "durability": 46,
+            "weight": 41,
+            "cost": 405
         },
-        "slug": "dohong",
+        "slug": "iron_badik_tumbuk_lado",
         "stackable": false,
         "description": ""
     },
     {
         "id": 3,
-        "title": "Golok",
+        "title": "Gold Badik Tumbuk Lado",
         "stats": {
-            "lethality": 40,
-            "durability": 21,
-            "weight": 27,
-            "cost": 235
+            "lethality": 55,
+            "durability": 50,
+            "weight": 38,
+            "cost": 454
         },
-        "slug": "golok",
+        "slug": "gold_badik_tumbuk_lado",
         "stackable": false,
         "description": ""
     },
     {
         "id": 4,
-        "title": "Keris",
+        "title": "Steel Badik Tumbuk Lado",
         "stats": {
-            "lethality": 60,
-            "durability": 23,
-            "weight": 25,
-            "cost": 500
+            "lethality": 78,
+            "durability": 73,
+            "weight": 71,
+            "cost": 420
         },
-        "slug": "keris",
+        "slug": "steel_badik_tumbuk_lado",
         "stackable": false,
         "description": ""
     },
     {
         "id": 5,
-        "title": "Kujang",
+        "title": "Copper Celurit",
         "stats": {
-            "lethality": 32,
-            "durability": 27,
-            "weight": 12,
-            "cost": 315
+            "lethality": 62,
+            "durability": 37,
+            "weight": 27,
+            "cost": 285
         },
-        "slug": "kujang",
+        "slug": "copper_celurit",
         "stackable": false,
         "description": ""
     },
     {
         "id": 6,
-        "title": "Mandau",
+        "title": "Silver Celurit",
         "stats": {
-            "lethality":41,
-            "durability": 28,
-            "weight": 23,
-            "cost": 62
+            "lethality": 78,
+            "durability": 1,
+            "weight": 29,
+            "cost": 292
         },
-        "slug": "mandau",
+        "slug": "silver_celurit",
         "stackable": false,
         "description": ""
     },
     {
         "id": 7,
-        "title": "Parang Salawaku",
+        "title": "Iron Celurit",
         "stats": {
-            "lethality": 42,
-            "durability": 28,
-            "weight": 25,
-            "cost": 488
+            "lethality": 69,
+            "durability": 20,
+            "weight": 36,
+            "cost": 285
         },
-        "slug": "parang_salawaku",
+        "slug": "iron_celurit",
         "stackable": false,
         "description": ""
     },
     {
         "id": 8,
-        "title": "Pasatimpo",
+        "title": "Gold Celurit",
         "stats": {
-            "lethality": 26,
-            "durability": 53,
-            "weight": 12,
-            "cost": 512
+            "lethality": 81,
+            "durability": 22,
+            "weight": 30,
+            "cost": 316
         },
-        "slug": "pasatimpo",
+        "slug": "gold_celurit",
         "stackable": false,
         "description": ""
     },
     {
         "id": 9,
-        "title": "Pedang Bara Sangihe",
+        "title": "Steel Celurit",
         "stats": {
-            "lethality": 30,
-            "durability": 25,
-            "weight": 22,
-            "cost": 180
+            "lethality": 98,
+            "durability": 56,
+            "weight": 61,
+            "cost": 306
         },
-        "slug": "pedang_bara_sangihe",
+        "slug": "steel_celurit",
         "stackable": false,
         "description": ""
     },
     {
         "id": 10,
-        "title": "Pedang Jenawi",
+        "title": "Copper Dohong",
         "stats": {
-            "lethality": 39,
-            "durability": 67,
-            "weight": 43,
-            "cost": 356
+            "lethality": 1,
+            "durability": 100,
+            "weight": 36,
+            "cost": 475
         },
-        "slug": "pedang_jenawi",
+        "slug": "copper_dohong",
         "stackable": false,
         "description": ""
     },
     {
         "id": 11,
-        "title": "Piso Gaja Dompak",
+        "title": "Silver Dohong",
         "stats": {
-            "lethality": 20,
-            "durability": 57,
-            "weight": 16,
-            "cost": 122
+            "lethality": 22,
+            "durability": 64,
+            "weight": 28,
+            "cost": 477
         },
-        "slug": "piso_gaja_dompak",
+        "slug": "silver_dohong",
         "stackable": false,
         "description": ""
     },
     {
         "id": 12,
-        "title": "Rencong",
+        "title": "Iron Dohong",
         "stats": {
-            "lethality": 40,
-            "durability": 28,
-            "weight": 22,
-            "cost": 300
+            "lethality": 15,
+            "durability": 86,
+            "weight": 40,
+            "cost": 475
         },
-        "slug": "rencong",
+        "slug": "iron_dohong",
         "stackable": false,
         "description": ""
     },
     {
         "id": 13,
-        "title": "Siwar Panjang",
+        "title": "Gold Dohong",
         "stats": {
-            "lethality": 66,
-            "durability": 31,
-            "weight": 62,
-            "cost": 285
+            "lethality": 28,
+            "durability": 85,
+            "weight": 45,
+            "cost": 509
         },
-        "slug": "siwar_panjang",
+        "slug": "gold_dohong",
         "stackable": false,
         "description": ""
     },
     {
         "id": 14,
-        "title": "Terapang",
+        "title": "Steel Dohong",
         "stats": {
-            "lethality": 37,
-            "durability": 59,
-            "weight": 36,
-            "cost": 197
+            "lethality": 43,
+            "durability": 114,
+            "weight": 70,
+            "cost": 491
         },
-        "slug": "terapang",
+        "slug": "steel_dohong",
         "stackable": false,
         "description": ""
     },
     {
         "id": 15,
-        "title": "Tombak Trisula",
+        "title": "Copper Golok",
         "stats": {
-            "lethality": 10,
-            "durability": 20,
-            "weight": 15,
-            "cost": 355
+            "lethality": 46,
+            "durability": 38,
+            "weight": 27,
+            "cost": 235
         },
-        "slug": "tombak_trisula",
+        "slug": "copper_golok",
         "stackable": false,
         "description": ""
     },
     {
         "id": 16,
-        "title": "Wamilo",
+        "title": "Silver Golok",
+        "stats": {
+            "lethality": 52,
+            "durability": 2,
+            "weight": 26,
+            "cost": 245
+        },
+        "slug": "silver_golok",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 17,
+        "title": "Iron Golok",
+        "stats": {
+            "lethality": 49,
+            "durability": 29,
+            "weight": 35,
+            "cost": 235
+        },
+        "slug": "iron_golok",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 18,
+        "title": "Gold Golok",
+        "stats": {
+            "lethality": 57,
+            "durability": 30,
+            "weight": 33,
+            "cost": 269
+        },
+        "slug": "gold_golok",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 19,
+        "title": "Steel Golok",
+        "stats": {
+            "lethality": 78,
+            "durability": 68,
+            "weight": 54,
+            "cost": 258
+        },
+        "slug": "steel_golok",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 20,
+        "title": "Copper Keris",
+        "stats": {
+            "lethality": 50,
+            "durability": 44,
+            "weight": 25,
+            "cost": 500
+        },
+        "slug": "copper_keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 21,
+        "title": "Silver Keris",
+        "stats": {
+            "lethality": 85,
+            "durability": 9,
+            "weight": 17,
+            "cost": 510
+        },
+        "slug": "silver_keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 22,
+        "title": "Iron Keris",
+        "stats": {
+            "lethality": 65,
+            "durability": 31,
+            "weight": 26,
+            "cost": 500
+        },
+        "slug": "iron_keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 23,
+        "title": "Gold Keris",
+        "stats": {
+            "lethality": 77,
+            "durability": 24,
+            "weight": 32,
+            "cost": 526
+        },
+        "slug": "gold_keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 24,
+        "title": "Steel Keris",
+        "stats": {
+            "lethality": 109,
+            "durability": 51,
+            "weight": 55,
+            "cost": 517
+        },
+        "slug": "steel_keris",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 25,
+        "title": "Copper Kujang",
+        "stats": {
+            "lethality": 31,
+            "durability": 39,
+            "weight": 12,
+            "cost": 315
+        },
+        "slug": "copper_kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 26,
+        "title": "Silver Kujang",
+        "stats": {
+            "lethality": 44,
+            "durability": 5,
+            "weight": 2,
+            "cost": 318
+        },
+        "slug": "silver_kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 27,
+        "title": "Iron Kujang",
+        "stats": {
+            "lethality": 33,
+            "durability": 36,
+            "weight": 15,
+            "cost": 315
+        },
+        "slug": "iron_kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 28,
+        "title": "Gold Kujang",
+        "stats": {
+            "lethality": 48,
+            "durability": 31,
+            "weight": 19,
+            "cost": 364
+        },
+        "slug": "gold_kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 29,
+        "title": "Steel Kujang",
+        "stats": {
+            "lethality": 63,
+            "durability": 65,
+            "weight": 49,
+            "cost": 336
+        },
+        "slug": "steel_kujang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 30,
+        "title": "Copper Mandau",
+        "stats": {
+            "lethality":38,
+            "durability": 45,
+            "weight": 23,
+            "cost": 62
+        },
+        "slug": "copper_mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 31,
+        "title": "Silver Mandau",
+        "stats": {
+            "lethality":55,
+            "durability": 17,
+            "weight": 13,
+            "cost": 67
+        },
+        "slug": "silver_mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 32,
+        "title": "Iron Mandau",
+        "stats": {
+            "lethality":51,
+            "durability": 36,
+            "weight": 27,
+            "cost": 62
+        },
+        "slug": "iron_mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 33,
+        "title": "Gold Mandau",
+        "stats": {
+            "lethality":63,
+            "durability": 33,
+            "weight": 31,
+            "cost": 94
+        },
+        "slug": "gold_mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 34,
+        "title": "Steel Mandau",
+        "stats": {
+            "lethality":71,
+            "durability": 71,
+            "weight": 68,
+            "cost": 77
+        },
+        "slug": "steel_mandau",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 35,
+        "title": "Copper Parang Salawaku",
+        "stats": {
+            "lethality": 35,
+            "durability": 50,
+            "weight": 25,
+            "cost": 488
+        },
+        "slug": "copper_parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 36,
+        "title": "Silver Parang Salawaku",
+        "stats": {
+            "lethality": 66,
+            "durability": 15,
+            "weight": 17,
+            "cost": 492
+        },
+        "slug": "silver_parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 37,
+        "title": "Iron Parang Salawaku",
+        "stats": {
+            "lethality": 51,
+            "durability": 35,
+            "weight": 32,
+            "cost": 488
+        },
+        "slug": "iron_parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 38,
+        "title": "Gold Parang Salawaku",
+        "stats": {
+            "lethality": 54,
+            "durability": 33,
+            "weight": 29,
+            "cost": 515
+        },
+        "slug": "gold_parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 39,
+        "title": "Steel Parang Salawaku",
+        "stats": {
+            "lethality": 90,
+            "durability": 65,
+            "weight": 70,
+            "cost": 512
+        },
+        "slug": "steel_parang_salawaku",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 40,
+        "title": "Copper Pasatimpo",
+        "stats": {
+            "lethality": 18,
+            "durability": 68,
+            "weight": 12,
+            "cost": 512
+        },
+        "slug": "copper_pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 41,
+        "title": "Silver Pasatimpo",
+        "stats": {
+            "lethality": 51,
+            "durability": 38,
+            "weight": 7,
+            "cost": 518
+        },
+        "slug": "silver_pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 42,
+        "title": "Iron Pasatimpo",
+        "stats": {
+            "lethality": 28,
+            "durability": 57,
+            "weight": 14,
+            "cost": 512
+        },
+        "slug": "iron_pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 43,
+        "title": "Gold Pasatimpo",
+        "stats": {
+            "lethality": 47,
+            "durability": 59,
+            "weight": 22,
+            "cost": 540
+        },
+        "slug": "gold_pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 44,
+        "title": "Steel Pasatimpo",
+        "stats": {
+            "lethality": 60,
+            "durability": 86,
+            "weight": 48,
+            "cost": 528
+        },
+        "slug": "steel_pasatimpo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 45,
+        "title": "Copper Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 23,
+            "durability": 45,
+            "weight": 22,
+            "cost": 180
+        },
+        "slug": "copper_pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 46,
+        "title": "Silver Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 49,
+            "durability": 10,
+            "weight": 20,
+            "cost": 184
+        },
+        "slug": "silver_pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 47,
+        "title": "Iron Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 38,
+            "durability": 32,
+            "weight": 23,
+            "cost": 180
+        },
+        "slug": "iron_pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 48,
+        "title": "Gold Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 45,
+            "durability": 26,
+            "weight": 26,
+            "cost": 210
+        },
+        "slug": "gold_pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 49,
+        "title": "Steel Pedang Bara Sangihe",
+        "stats": {
+            "lethality": 75,
+            "durability": 71,
+            "weight": 70,
+            "cost": 196
+        },
+        "slug": "steel_pedang_bara_sangihe",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 50,
+        "title": "Copper Pedang Jenawi",
+        "stats": {
+            "lethality": 32,
+            "durability": 91,
+            "weight": 43,
+            "cost": 356
+        },
+        "slug": "copper_pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 51,
+        "title": "Silver Pedang Jenawi",
+        "stats": {
+            "lethality": 60,
+            "durability": 53,
+            "weight": 42,
+            "cost": 366
+        },
+        "slug": "silver_pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 52,
+        "title": "Iron Pedang Jenawi",
+        "stats": {
+            "lethality": 45,
+            "durability": 70,
+            "weight": 48,
+            "cost": 356
+        },
+        "slug": "iron_pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 53,
+        "title": "Gold Pedang Jenawi",
+        "stats": {
+            "lethality": 62,
+            "durability": 76,
+            "weight": 46,
+            "cost": 398
+        },
+        "slug": "gold_pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 54,
+        "title": "Steel Pedang Jenawi",
+        "stats": {
+            "lethality": 82,
+            "durability": 100,
+            "weight": 76,
+            "cost": 369
+        },
+        "slug": "steel_pedang_jenawi",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 55,
+        "title": "Copper Piso Gaja Dompak",
+        "stats": {
+            "lethality": 16,
+            "durability": 76,
+            "weight": 16,
+            "cost": 122
+        },
+        "slug": "copper_piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 56,
+        "title": "Silver Piso Gaja Dompak",
+        "stats": {
+            "lethality": 31,
+            "durability": 32,
+            "weight": 9,
+            "cost": 125
+        },
+        "slug": "silver_piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 57,
+        "title": "Iron Piso Gaja Dompak",
+        "stats": {
+            "lethality": 21,
+            "durability": 60,
+            "weight": 22,
+            "cost": 122
+        },
+        "slug": "iron_piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 58,
+        "title": "Gold Piso Gaja Dompak",
         "stats": {
             "lethality": 34,
-            "durability": 70,
+            "durability": 65,
+            "weight": 19,
+            "cost": 153
+        },
+        "slug": "gold_piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 59,
+        "title": "Steel Piso Gaja Dompak",
+        "stats": {
+            "lethality": 56,
+            "durability": 92,
+            "weight": 48,
+            "cost": 146
+        },
+        "slug": "steel_piso_gaja_dompak",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 60,
+        "title": "Copper Rencong",
+        "stats": {
+            "lethality": 37,
+            "durability": 52,
+            "weight": 22,
+            "cost": 300
+        },
+        "slug": "copper_rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 61,
+        "title": "Silver Rencong",
+        "stats": {
+            "lethality": 59,
+            "durability": 7,
+            "weight": 12,
+            "cost": 309
+        },
+        "slug": "silver_rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 62,
+        "title": "Iron Rencong",
+        "stats": {
+            "lethality": 48,
+            "durability": 30,
+            "weight": 27,
+            "cost": 300
+        },
+        "slug": "iron_rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 63,
+        "title": "Gold Rencong",
+        "stats": {
+            "lethality": 51,
+            "durability": 37,
+            "weight": 25,
+            "cost": 347
+        },
+        "slug": "gold_rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 64,
+        "title": "Steel Rencong",
+        "stats": {
+            "lethality": 67,
+            "durability": 59,
+            "weight": 67,
+            "cost": 319
+        },
+        "slug": "steel_rencong",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 65,
+        "title": "Copper Siwar Panjang",
+        "stats": {
+            "lethality": 56,
+            "durability": 56,
+            "weight": 62,
+            "cost": 285
+        },
+        "slug": "copper_siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 66,
+        "title": "Silver Siwar Panjang",
+        "stats": {
+            "lethality": 89,
+            "durability": 13,
+            "weight": 55,
+            "cost": 290
+        },
+        "slug": "silver_siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 67,
+        "title": "Iron Siwar Panjang",
+        "stats": {
+            "lethality": 68,
+            "durability": 38,
+            "weight": 64,
+            "cost": 285
+        },
+        "slug": "iron_siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 68,
+        "title": "Gold Siwar Panjang",
+        "stats": {
+            "lethality": 80,
+            "durability": 40,
+            "weight": 64,
+            "cost": 321
+        },
+        "slug": "gold_siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 69,
+        "title": "Steel Siwar Panjang",
+        "stats": {
+            "lethality": 107,
+            "durability": 57,
+            "weight": 98,
+            "cost": 310
+        },
+        "slug": "steel_siwar_panjang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 70,
+        "title": "Copper Terapang",
+        "stats": {
+            "lethality": 31,
+            "durability": 79,
+            "weight": 36,
+            "cost": 197
+        },
+        "slug": "copper_terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 71,
+        "title": "Silver Terapang",
+        "stats": {
+            "lethality": 57,
+            "durability": 43,
+            "weight": 27,
+            "cost": 202
+        },
+        "slug": "silver_terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 72,
+        "title": "Iron Terapang",
+        "stats": {
+            "lethality": 39,
+            "durability": 68,
+            "weight": 45,
+            "cost": 197
+        },
+        "slug": "iron_terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 73,
+        "title": "Gold Terapang",
+        "stats": {
+            "lethality": 48,
+            "durability": 62,
+            "weight": 42,
+            "cost": 223
+        },
+        "slug": "gold_terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 74,
+        "title": "Steel Terapang",
+        "stats": {
+            "lethality": 63,
+            "durability": 95,
+            "weight": 80,
+            "cost": 212
+        },
+        "slug": "steel_terapang",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 75,
+        "title": "Copper Tombak Trisula",
+        "stats": {
+            "lethality": 8,
+            "durability": 35,
+            "weight": 15,
+            "cost": 355
+        },
+        "slug": "copper_tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 76,
+        "title": "Silver Tombak Trisula",
+        "stats": {
+            "lethality": 26,
+            "durability": 6,
+            "weight": 14,
+            "cost": 363
+        },
+        "slug": "silver_tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 77,
+        "title": "Iron Tombak Trisula",
+        "stats": {
+            "lethality": 17,
+            "durability": 21,
+            "weight": 23,
+            "cost": 355
+        },
+        "slug": "iron_tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 78,
+        "title": "Gold Tombak Trisula",
+        "stats": {
+            "lethality": 22,
+            "durability": 23,
+            "weight": 21,
+            "cost": 390
+        },
+        "slug": "gold_tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 79,
+        "title": "Steel Tombak Trisula",
+        "stats": {
+            "lethality": 36,
+            "durability": 60,
+            "weight": 57,
+            "cost": 380
+        },
+        "slug": "steel_tombak_trisula",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 80,
+        "title": "Copper Wamilo",
+        "stats": {
+            "lethality": 24,
+            "durability": 81,
             "weight": 19,
             "cost": 230
         },
-        "slug": "wamilo",
+        "slug": "copper_wamilo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 81,
+        "title": "Silver Wamilo",
+        "stats": {
+            "lethality": 59,
+            "durability": 53,
+            "weight": 17,
+            "cost": 237
+        },
+        "slug": "silver_wamilo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 82,
+        "title": "Iron Wamilo",
+        "stats": {
+            "lethality": 39,
+            "durability": 78,
+            "weight": 20,
+            "cost": 230
+        },
+        "slug": "iron_wamilo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 83,
+        "title": "Gold Wamilo",
+        "stats": {
+            "lethality": 56,
+            "durability": 78,
+            "weight": 28,
+            "cost": 267
+        },
+        "slug": "gold_wamilo",
+        "stackable": false,
+        "description": ""
+    },
+    {
+        "id": 84,
+        "title": "Steel Wamilo",
+        "stats": {
+            "lethality": 80,
+            "durability": 118,
+            "weight": 54,
+            "cost": 248
+        },
+        "slug": "steel_wamilo",
         "stackable": false,
         "description": ""
     }

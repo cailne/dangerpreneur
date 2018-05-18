@@ -8,6 +8,7 @@ public class TrueInventory : MonoBehaviour {
 	GameObject inventoryPanel;
     GameObject slotPanel;
     InventoryDatabase database;
+    //public PersistentVariables pv;
     public GameObject inventorySlot;
     public GameObject inventoryItem;
 
@@ -26,7 +27,11 @@ public class TrueInventory : MonoBehaviour {
         slotPanel = inventoryPanel.transform.Find("Slot Panel").gameObject;
         //contruct inventory
         for (int i = 0; i < slotAmount; i++){
-            items.Add(new Item()); //add some null item, which is empty slot
+            /*if(PersistentVariables.i.IdInv[i] > 0){
+                AddItem(PersistentVariables.i.IdInv[i]);
+            }else items.Add(new Item());*/
+            items.Add(new Item());
+            //add some null item, which is empty slot
             slots.Add(Instantiate(inventorySlot)); //cloning gameobject
             slots[i].GetComponent<Slot>().id = i; //define the id of the slot, 1,2,3 and so on
             slots[i].transform.SetParent(slotPanel.transform); //set the cloned slots's parent into slotpanel
@@ -34,10 +39,10 @@ public class TrueInventory : MonoBehaviour {
         }
 
         //AddItem(4);
-
-        if(PlayerPrefs.GetInt("craft") > 0){
-            AddItem(4);
+        if(PlayerPrefs.GetInt("ItemID") > 0){
+            AddItem(PlayerPrefs.GetInt("ItemID"));
         }
+
     }
 
     public void AddItem(int id){
