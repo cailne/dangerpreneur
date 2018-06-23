@@ -17,17 +17,27 @@ public class BlackMarketMgr : MonoBehaviour {
 
 	public Text PersonRequest;
 
+	float timeRemaining;
+
 
 	// Use this for initialization
-	void Start () {
+
+	void Awake(){
 		connectionPath = "URI=file:" + Application.dataPath + "/Dangerpreneur.sqlite";
+	}
+	void Start () {
+		timeRemaining = 5;
 		GetWeaponName ();
 		ShowRequest ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (timeRemaining > 0) {
+			timeRemaining -= Time.deltaTime;
+		} else {
+			Start ();
+		}
 	}
 
 	private void GetWeaponName(){
@@ -58,4 +68,5 @@ public class BlackMarketMgr : MonoBehaviour {
 		string Speech = "Make me " + Request + " and i will give you " + Gold + " Rupiah";
 		PersonRequest.text = Speech;
 	}
+		
 }

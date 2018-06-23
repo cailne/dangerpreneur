@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/InventoryTRUE.unity
+- path: Assets/Scene/BlackMarket.unity
   isLoaded: 1
   isActive: 1
