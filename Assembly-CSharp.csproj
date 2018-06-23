@@ -62,9 +62,7 @@
      <Compile Include="Assets\Script\CamControl.cs" />
      <Compile Include="Assets\Script\ChangeTab.cs" />
      <Compile Include="Assets\Script\ClickInput.cs" />
-     <Compile Include="Assets\Script\Craft.cs" />
      <Compile Include="Assets\Script\CraftingConfirmation.cs" />
-     <Compile Include="Assets\Script\CraftingManager.cs" />
      <Compile Include="Assets\Script\DefyBMMgr.cs" />
      <Compile Include="Assets\Script\DisplayCost.cs" />
      <Compile Include="Assets\Script\DisplayMoney.cs" />
@@ -75,9 +73,10 @@
      <Compile Include="Assets\Script\GoToShop.cs" />
      <Compile Include="Assets\Script\HireManager.cs" />
      <Compile Include="Assets\Script\HitBoxTEMP.cs" />
-     <Compile Include="Assets\Script\InventoryDatabase.cs" />
-     <Compile Include="Assets\Script\ItemData.cs" />
-     <Compile Include="Assets\Script\MasterItem.cs" />
+     <Compile Include="Assets\Script\INVVV\Inventory.cs" />
+     <Compile Include="Assets\Script\INVVV\InventorySlot.cs" />
+     <Compile Include="Assets\Script\INVVV\InventoryUI.cs" />
+     <Compile Include="Assets\Script\INVVV\MsItem.cs" />
      <Compile Include="Assets\Script\MasterSceneChange.cs" />
      <Compile Include="Assets\Script\MoneyScript.cs" />
      <Compile Include="Assets\Script\MonthAndYear.cs" />
@@ -85,14 +84,12 @@
      <Compile Include="Assets\Script\PickMaterial.cs" />
      <Compile Include="Assets\Script\Recruit.cs" />
      <Compile Include="Assets\Script\SaveCompanyName.cs" />
+     <Compile Include="Assets\Script\SellWeapon.cs" />
      <Compile Include="Assets\Script\ShopMgr.cs" />
      <Compile Include="Assets\Script\ShowMaterial.cs" />
-     <Compile Include="Assets\Script\Slot.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
-     <Compile Include="Assets\Script\Tooltip.cs" />
-     <Compile Include="Assets\Script\TrueInventory.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -173,10 +170,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Leonardo/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

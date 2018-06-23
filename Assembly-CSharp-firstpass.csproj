@@ -66,7 +66,7 @@
      <Compile Include="Assets\Plugins\UnityLitJson\Unity\UnityTypeBindings.cs" />
      <Compile Include="Assets\Plugins\UnityLitJson-Example\JsonExample.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -147,10 +147,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/Leonardo/Desktop/semester 4 memek/GIT FOR SE/dangerpreneur/Assets/Plugins/System.Data.dll</HintPath>
+ <HintPath>G:/buat tugas/dangerpreneur/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/Leonardo/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
