@@ -94,6 +94,7 @@
      <Compile Include="Assets\Script\ShopMgr.cs" />
      <Compile Include="Assets\Script\ShowMaterial.cs" />
      <Compile Include="Assets\Script\Slot.cs" />
+     <Compile Include="Assets\Script\SummaryCloseOpen.cs" />
      <Compile Include="Assets\Script\Timer.cs" />
      <Compile Include="Assets\Script\Tooltip.cs" />
      <Compile Include="Assets\Script\TrueInventory.cs" />
