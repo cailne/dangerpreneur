@@ -14,6 +14,7 @@ public class ChangeTab : MonoBehaviour {
 
 	void Start() {
 		ChangeToBuy ();
+
 	}
 
 	public void ChangeToBuy(){
