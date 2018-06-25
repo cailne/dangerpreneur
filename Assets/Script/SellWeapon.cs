@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SellWeapon : MonoBehaviour {
 
@@ -75,12 +76,15 @@ public class SellWeapon : MonoBehaviour {
 
     public void OnPressShop1(){
         PlayerPrefs.SetFloat("ShopMM", PlayerPrefs.GetFloat("ShopMulti1"));
+        SceneManager.LoadScene("Selling");
     }
     public void OnPressShop2(){
         PlayerPrefs.SetFloat("ShopMM", PlayerPrefs.GetFloat("ShopMulti2"));
+        SceneManager.LoadScene("Selling");
     }
     public void OnPressShop3(){
         PlayerPrefs.SetFloat("ShopMM", PlayerPrefs.GetFloat("ShopMulti3"));
+        SceneManager.LoadScene("Selling");
     }
 
     private void OnGUI()

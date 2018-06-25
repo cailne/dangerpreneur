@@ -9,6 +9,11 @@ public class CraftingConfirmation : MonoBehaviour {
 
 	//public PersistentVariables pv;
 
+	public MsItem siwar1,siwar2,siwar3,siwar4,siwar5;
+	public MsItem trisula1,trisula2,trisula3,trisula4,trisula5;
+	public MsItem golok1,golok2,golok3,golok4,golok5;
+	public MsItem jenawi1,jenawi2,jenawi3,jenawi4,jenawi5;
+
 	public Slider loading;
 	private int MaterialID;
 	// 1 = Copper, 2 = Gold, 3 = Iron, 4 = Silver, 5 = Rock
@@ -104,70 +109,71 @@ public class CraftingConfirmation : MonoBehaviour {
 				switch(PlayerPrefs.GetInt("WeaponID")){
 					case 1:
 						if (MaterialID == 1){
-							PlayerPrefs.SetInt("ItemID", 50);
+							Inventory.instance.Add(jenawi1);
 							
 						}else if (MaterialID == 2){
-							PlayerPrefs.SetInt("ItemID", 53);
+							Inventory.instance.Add(jenawi2);
 							
 						}else if (MaterialID == 3){
-							PlayerPrefs.SetInt("ItemID", 52);
+							Inventory.instance.Add(jenawi3);
 
 						}else if (MaterialID == 4){
-							PlayerPrefs.SetInt("ItemID", 51);
+							Inventory.instance.Add(jenawi4);
 
-						}else PlayerPrefs.SetInt("ItemID", 54);
+						}else Inventory.instance.Add(jenawi5);
 					break;
 
 					case 2:
 						if (MaterialID == 1){
-							PlayerPrefs.SetInt("ItemID", 65);
+							Inventory.instance.Add(siwar1);
 							
 						}else if (MaterialID == 2){
-							PlayerPrefs.SetInt("ItemID", 68);
+							Inventory.instance.Add(siwar2);
 							
 						}else if (MaterialID == 3){
-							PlayerPrefs.SetInt("ItemID", 67);
+							Inventory.instance.Add(siwar3);
 
 						}else if (MaterialID == 4){
-							PlayerPrefs.SetInt("ItemID", 66);
+							Inventory.instance.Add(siwar4);
 
-						}else PlayerPrefs.SetInt("ItemID", 69);
+						}else Inventory.instance.Add(siwar5);
 					break;
 
 					case 3:
 						if (MaterialID == 1){
-							PlayerPrefs.SetInt("ItemID", 75);
+							Inventory.instance.Add(trisula1);
 							
 						}else if (MaterialID == 2){
-							PlayerPrefs.SetInt("ItemID", 78);
+							Inventory.instance.Add(trisula2);
 							
 						}else if (MaterialID == 3){
-							PlayerPrefs.SetInt("ItemID", 77);
+							Inventory.instance.Add(trisula3);
 
 						}else if (MaterialID == 4){
-							PlayerPrefs.SetInt("ItemID", 76);
+							Inventory.instance.Add(trisula4);
 
-						}else PlayerPrefs.SetInt("ItemID", 79);
+						}else Inventory.instance.Add(trisula5);
 					break;
 
 					case 4:
 						if (MaterialID == 1){
-							PlayerPrefs.SetInt("ItemID", 15);
+							Inventory.instance.Add(golok1);
 							
 						}else if (MaterialID == 2){
-							PlayerPrefs.SetInt("ItemID", 18);
+							Inventory.instance.Add(golok2);
 							
 						}else if (MaterialID == 3){
-							PlayerPrefs.SetInt("ItemID", 17);
+							Inventory.instance.Add(golok3);
 
 						}else if (MaterialID == 4){
-							PlayerPrefs.SetInt("ItemID", 16);
+							Inventory.instance.Add(golok4);
 
-						}else PlayerPrefs.SetInt("ItemID", 19);
+						}else Inventory.instance.Add(golok5);
 					break;
 				}
-				PersistentVariables.i.addedItem += 1;
+				//PersistentVariables.i.addedItem += 1;
 				AllowCraft = false;
+				
 			}
 		}
 	}

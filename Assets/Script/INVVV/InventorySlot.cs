@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour {
+public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
+	[SerializeField] ItemTooltip tooltip;
 	public Image icon;
 	public Button removeButton;
 	MsItem item;
 
-	public int staticTest;
 	
+	protected virtual void OnValidate(){
+		if (tooltip == null){
+			tooltip = FindObjectOfType<ItemTooltip>();
+		}
+	}
+
 	public void AddItem(MsItem newItem){
 		item = newItem;
 
@@ -27,13 +34,24 @@ public class InventorySlot : MonoBehaviour {
 		removeButton.interactable = false;
 	}
 
-	public void OnRemoveButton(){
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+		if (item != null)
+        	tooltip.ShowTooltip(item);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        tooltip.HideTooltip();
+    }
+
+    public void OnRemoveButton(){
 		Inventory.instance.Remove(item);
 	}
 
 	public void Selling(){
 		if (item != null){
-			staticTest += (int)(item.value * PlayerPrefs.GetFloat("ShopMM"));
+			MoneyScript.defaultMoney += (int)(item.value * PlayerPrefs.GetFloat("ShopMM"));
 			Inventory.instance.Remove(item);
 		}
 	}

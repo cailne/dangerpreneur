@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MasterSceneChange : MonoBehaviour {
 
-	public Timer t;
+	//public Timer t;
 
 	public void ToGameplay(){
 		SceneManager.LoadScene("S1");
@@ -19,7 +19,7 @@ public class MasterSceneChange : MonoBehaviour {
 		SceneManager.LoadScene("Crafting2Complete");
 	}
 	public void ToInv(){
-		SceneManager.LoadScene("Inv");
+		SceneManager.LoadScene("InventoryTRUE");
 	}
 	
 
@@ -31,27 +31,32 @@ public class MasterSceneChange : MonoBehaviour {
 		SceneManager.LoadScene ("Shop");
 	}
 
+	public void ToSellingConfirmation(){
+		SceneManager.LoadScene("Selling");
+	}
+
+
 	public void ToCraftingFromS1(){
 		SceneManager.LoadScene("Crafting");
-		float g = t.TrueTime;
-		PlayerPrefs.SetFloat("Time",g);
+		//float g = t.TrueTime;
+		//PlayerPrefs.SetFloat("Time",g);
 	}
 	public void ToInvFromS1(){
 		SceneManager.LoadScene("Inv");
-		float g = t.TrueTime;
-		PlayerPrefs.SetFloat("Time",g);
+		//float g = t.TrueTime;
+		//PlayerPrefs.SetFloat("Time",g);
 	}
 	
 
 	public void ToBlackMarketFromS1() {
 		SceneManager.LoadScene ("BlackMarket");
-		float g = t.TrueTime;
-		PlayerPrefs.SetFloat("Time",g);
+		//float g = t.TrueTime;
+		//PlayerPrefs.SetFloat("Time",g);
 	}
 
 	public void ToShopFromS1() {
 		SceneManager.LoadScene ("Shop");
-		float g = t.TrueTime;
-		PlayerPrefs.SetFloat("Time",g);
+		//float g = t.TrueTime;
+		//PlayerPrefs.SetFloat("Time",g);
 	}
 }

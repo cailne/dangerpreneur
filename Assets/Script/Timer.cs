@@ -19,19 +19,19 @@ private float timeCore;
 		}else if (PlayerPrefs.GetFloat("Time") > 0){
 			ttm = PlayerPrefs.GetFloat("Time");
 		}
-		TrueTime += ttm;
+		//TrueTime += ttm;
 	}
 	void Update () {
-		TrueTime = (Time.time - timeCore);
+		TrueTime += Time.deltaTime;
 
 
 		string m = ((int) (TrueTime / 10) % 13 + 1).ToString();
 		string y = ((int) (TrueTime / 120) + 1600).ToString();
 
-		
-
 		month.text = m;
 		year.text = y;
+
+		PlayerPrefs.SetFloat("Time", TrueTime);
 	}
 }
 
