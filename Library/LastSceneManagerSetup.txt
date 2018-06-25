@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scene/Selling.unity
+=======
+- path: Assets/Scene/BlackMarket.unity
+>>>>>>> 317e3a209ffc049eb88c888bc259c8777ce2aa37
   isLoaded: 1
   isActive: 1
