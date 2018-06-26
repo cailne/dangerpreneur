@@ -9,6 +9,11 @@ public class PersistentVariables : MonoBehaviour {
 
     public int lethality, durability, weight, cost, addedItem;
     //int[] IdInv = new int[15] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+    public MsItem siwar11, siwar12, siwar13, siwar14, siwar15;
+    public MsItem jenawi11, jenawi12, jenawi13, jenawi14, jenawi15;
+    public MsItem trisula11, trisula12, trisula13, trisula14, trisula15;
+    public MsItem golok11, golok12, golok13, golok14, golok15;
     
 	void Awake(){
 		if (i == null) {

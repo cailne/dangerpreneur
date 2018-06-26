@@ -42,7 +42,8 @@ public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        tooltip.HideTooltip();
+        if(item != null)
+            tooltip.HideTooltip();
     }
 
     public void OnRemoveButton(){

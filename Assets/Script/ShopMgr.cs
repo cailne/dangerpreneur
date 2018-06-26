@@ -43,7 +43,7 @@ public class ShopMgr : MonoBehaviour {
 	float timeRemaining;
 
 	void Awake(){
-		connectionPath = "URI=file:" + Application.dataPath + "/Dangerpreneur.sqlite";
+		connectionPath = "URI=file:" + Application.dataPath + "/StreamingAssets/Dangerpreneur.sqlite";
 		ReadDBResource ();
 		ReadDBPrice ();
 	}

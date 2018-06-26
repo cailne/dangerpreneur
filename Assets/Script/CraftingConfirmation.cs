@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CraftingConfirmation : MonoBehaviour {
 
@@ -9,10 +10,10 @@ public class CraftingConfirmation : MonoBehaviour {
 
 	//public PersistentVariables pv;
 
-	public MsItem siwar1,siwar2,siwar3,siwar4,siwar5;
+	/*public MsItem siwar1,siwar2,siwar3,siwar4,siwar5;
 	public MsItem trisula1,trisula2,trisula3,trisula4,trisula5;
 	public MsItem golok1,golok2,golok3,golok4,golok5;
-	public MsItem jenawi1,jenawi2,jenawi3,jenawi4,jenawi5;
+	public MsItem jenawi1,jenawi2,jenawi3,jenawi4,jenawi5;*/
 
 	public Slider loading;
 	private int MaterialID;
@@ -38,7 +39,108 @@ public class CraftingConfirmation : MonoBehaviour {
 	}
 
 	public void Accept() {
-		switch (MaterialID) {
+
+        switch (PlayerPrefs.GetInt("WeaponID"))
+        {
+            case 1:
+                if (MaterialID == 1)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.jenawi11);
+
+                }
+                else if (MaterialID == 2)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.jenawi12);
+
+                }
+                else if (MaterialID == 3)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.jenawi13);
+
+                }
+                else if (MaterialID == 4)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.jenawi14);
+
+                }
+                else Inventory.instance.Add(PersistentVariables.i.jenawi15);
+                break;
+
+            case 2:
+                if (MaterialID == 1)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.siwar11);
+
+                }
+                else if (MaterialID == 2)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.siwar12);
+
+                }
+                else if (MaterialID == 3)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.siwar13);
+
+                }
+                else if (MaterialID == 4)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.siwar14);
+
+                }
+                else Inventory.instance.Add(PersistentVariables.i.siwar15);
+                break;
+
+            case 3:
+                if (MaterialID == 1)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.trisula11);
+
+                }
+                else if (MaterialID == 2)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.trisula12);
+
+                }
+                else if (MaterialID == 3)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.trisula13);
+
+                }
+                else if (MaterialID == 4)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.trisula14);
+
+                }
+                else Inventory.instance.Add(PersistentVariables.i.trisula15);
+                break;
+
+            case 4:
+                if (MaterialID == 1)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.golok11);
+
+                }
+                else if (MaterialID == 2)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.golok12);
+
+                }
+                else if (MaterialID == 3)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.golok13);
+
+                }
+                else if (MaterialID == 4)
+                {
+                    Inventory.instance.Add(PersistentVariables.i.golok14);
+
+                }
+                else Inventory.instance.Add(PersistentVariables.i.golok15);
+                break;
+        }
+        //PersistentVariables.i.addedItem += 1;
+
+        switch (MaterialID) {
 		case 1:
 			if (tempCooper >= 1 && tempWood >= 1) {
 				AllowCraft = true;
@@ -106,73 +208,9 @@ public class CraftingConfirmation : MonoBehaviour {
 
 			if (counter >= loadingTime + delayBeforeDisappear) {
 				loading.gameObject.SetActive (false);
-				switch(PlayerPrefs.GetInt("WeaponID")){
-					case 1:
-						if (MaterialID == 1){
-							Inventory.instance.Add(jenawi1);
-							
-						}else if (MaterialID == 2){
-							Inventory.instance.Add(jenawi2);
-							
-						}else if (MaterialID == 3){
-							Inventory.instance.Add(jenawi3);
-
-						}else if (MaterialID == 4){
-							Inventory.instance.Add(jenawi4);
-
-						}else Inventory.instance.Add(jenawi5);
-					break;
-
-					case 2:
-						if (MaterialID == 1){
-							Inventory.instance.Add(siwar1);
-							
-						}else if (MaterialID == 2){
-							Inventory.instance.Add(siwar2);
-							
-						}else if (MaterialID == 3){
-							Inventory.instance.Add(siwar3);
-
-						}else if (MaterialID == 4){
-							Inventory.instance.Add(siwar4);
-
-						}else Inventory.instance.Add(siwar5);
-					break;
-
-					case 3:
-						if (MaterialID == 1){
-							Inventory.instance.Add(trisula1);
-							
-						}else if (MaterialID == 2){
-							Inventory.instance.Add(trisula2);
-							
-						}else if (MaterialID == 3){
-							Inventory.instance.Add(trisula3);
-
-						}else if (MaterialID == 4){
-							Inventory.instance.Add(trisula4);
-
-						}else Inventory.instance.Add(trisula5);
-					break;
-
-					case 4:
-						if (MaterialID == 1){
-							Inventory.instance.Add(golok1);
-							
-						}else if (MaterialID == 2){
-							Inventory.instance.Add(golok2);
-							
-						}else if (MaterialID == 3){
-							Inventory.instance.Add(golok3);
-
-						}else if (MaterialID == 4){
-							Inventory.instance.Add(golok4);
-
-						}else Inventory.instance.Add(golok5);
-					break;
-				}
-				//PersistentVariables.i.addedItem += 1;
+				
 				AllowCraft = false;
+                //SceneManager.LoadScene("InventoryTRUE");
 				
 			}
 		}

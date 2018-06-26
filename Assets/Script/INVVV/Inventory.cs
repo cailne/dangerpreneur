@@ -6,19 +6,27 @@ public class Inventory : MonoBehaviour {
 	
 	#region Singleton
 
-	public static Inventory instance;
+	public static Inventory instance { get; private set; }
 
 	void Awake(){
-		if(instance != null){
-			Debug.Log("too much");
-			return;
+		if(instance == null){
+            instance = this;
+            DontDestroyOnLoad(gameObject);
 		}
-		instance = this;
+	    else
+        {
+            Destroy(gameObject);
+        }
 	}
 
-	#endregion
+    #endregion
 
-	public delegate void OnItemChanged();
+    void Start()
+    {
+        
+    }
+
+    public delegate void OnItemChanged();
 	public OnItemChanged onItemChangeCallback;
 
 	public int space = 15;

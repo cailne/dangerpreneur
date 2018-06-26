@@ -23,7 +23,7 @@ public class BlackMarketMgr : MonoBehaviour {
 	// Use this for initialization
 
 	void Awake(){
-		connectionPath = "URI=file:" + Application.dataPath + "/Dangerpreneur.sqlite";
+		connectionPath = "URI=file:" + Application.dataPath + "/StreamingAssets/Dangerpreneur.sqlite";
 	}
 	void Start () {
 		timeRemaining = 5;
