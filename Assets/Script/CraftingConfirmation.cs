@@ -45,97 +45,96 @@ public class CraftingConfirmation : MonoBehaviour {
             case 1:
                 if (MaterialID == 1)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.jenawi11);
+                    Inventory.Item[0] += 1;
 
                 }
                 else if (MaterialID == 2)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.jenawi12);
+                    Inventory.Item[1] += 1;
 
                 }
                 else if (MaterialID == 3)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.jenawi13);
+                    Inventory.Item[2] += 1;
 
                 }
                 else if (MaterialID == 4)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.jenawi14);
+                    Inventory.Item[3] += 1;
 
                 }
-                else Inventory.instance.Add(PersistentVariables.i.jenawi15);
+                else Inventory.Item[4] += 1;
                 break;
 
             case 2:
                 if (MaterialID == 1)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.siwar11);
+                    Inventory.Item[5] += 1;
 
                 }
                 else if (MaterialID == 2)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.siwar12);
+                    Inventory.Item[6] += 1;
 
                 }
                 else if (MaterialID == 3)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.siwar13);
+                    Inventory.Item[7] += 1;
 
                 }
                 else if (MaterialID == 4)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.siwar14);
+                    Inventory.Item[8] += 1;
 
                 }
-                else Inventory.instance.Add(PersistentVariables.i.siwar15);
+                else Inventory.Item[9] += 1;
                 break;
 
             case 3:
                 if (MaterialID == 1)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.trisula11);
+                    Inventory.Item[10] += 1;
 
                 }
                 else if (MaterialID == 2)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.trisula12);
-
+                    Inventory.Item[11] += 1;
                 }
                 else if (MaterialID == 3)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.trisula13);
+                    Inventory.Item[12] += 1;
 
                 }
                 else if (MaterialID == 4)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.trisula14);
+                    Inventory.Item[13] += 1;
 
                 }
-                else Inventory.instance.Add(PersistentVariables.i.trisula15);
+                else Inventory.Item[14] += 1;
                 break;
 
             case 4:
                 if (MaterialID == 1)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.golok11);
+                    Inventory.Item[15] += 1;
 
                 }
                 else if (MaterialID == 2)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.golok12);
+                    Inventory.Item[16] += 1;
 
                 }
                 else if (MaterialID == 3)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.golok13);
+                    Inventory.Item[17] += 1;
 
                 }
                 else if (MaterialID == 4)
                 {
-                    Inventory.instance.Add(PersistentVariables.i.golok14);
+                    Inventory.Item[18] += 1;
 
                 }
-                else Inventory.instance.Add(PersistentVariables.i.golok15);
+                else Inventory.Item[19] += 1;
                 break;
         }
         //PersistentVariables.i.addedItem += 1;
@@ -210,7 +209,7 @@ public class CraftingConfirmation : MonoBehaviour {
 				loading.gameObject.SetActive (false);
 				
 				AllowCraft = false;
-                //SceneManager.LoadScene("InventoryTRUE");
+                SceneManager.LoadScene("InventoryTRUE");
 				
 			}
 		}

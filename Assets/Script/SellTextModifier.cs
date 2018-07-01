@@ -7,7 +7,7 @@ public class SellTextModifier : MonoBehaviour {
 
 	public Text setter;
 	void Start () {
-		setter.text = "Multiplier: " + PlayerPrefs.GetFloat("ShopMM") + "\nClick to sell the item";
+		setter.text = "Multiplier\n" + PlayerPrefs.GetFloat("ShopMM");
 	}
 	
 	

@@ -7,12 +7,19 @@ public class ItemTooltip : MonoBehaviour {
 
 	[SerializeField] Text ItemName;
 	[SerializeField] Text ItemValue;
-	[SerializeField] Image ItemIcon;
+	//[SerializeField] Image ItemIcon;
+
+	public GameObject tooltip;
+
+	void Update(){
+		if (tooltip.activeSelf){ //if the tooltip is active
+			tooltip.transform.position = Input.mousePosition; //set the position near the cursor
+		}
+	}
 
 	public void ShowTooltip(MsItem item){
 		ItemName.text = item.name;
-		ItemValue.text = "Price: " + item.value.ToString();
-		ItemIcon.sprite = item.icon;
+		//ItemIcon.sprite = item.icon;
 		gameObject.SetActive(true);
 	}
 

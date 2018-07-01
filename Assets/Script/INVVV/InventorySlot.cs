@@ -4,56 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class InventorySlot : MonoBehaviour {
 
-	[SerializeField] ItemTooltip tooltip;
-	public Image icon;
-	public Button removeButton;
-	MsItem item;
-
+	// Use this for initialization
+	void Start () {
+		
+	}
 	
-	protected virtual void OnValidate(){
-		if (tooltip == null){
-			tooltip = FindObjectOfType<ItemTooltip>();
-		}
-	}
-
-	public void AddItem(MsItem newItem){
-		item = newItem;
-
-		icon.sprite = item.icon;
-		icon.enabled = true;
-		removeButton.interactable = true;
-	}
-
-	public void ClearSlot(){
-		item = null;
-
-		icon.sprite = null;
-		icon.enabled = false;
-		removeButton.interactable = false;
-	}
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-		if (item != null)
-        	tooltip.ShowTooltip(item);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if(item != null)
-            tooltip.HideTooltip();
-    }
-
-    public void OnRemoveButton(){
-		Inventory.instance.Remove(item);
-	}
-
-	public void Selling(){
-		if (item != null){
-			MoneyScript.defaultMoney += (int)(item.value * PlayerPrefs.GetFloat("ShopMM"));
-			Inventory.instance.Remove(item);
-		}
+	// Update is called once per frame
+	void Update () {
+		
 	}
 }
