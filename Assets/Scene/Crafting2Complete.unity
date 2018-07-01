@@ -2216,26 +2216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7388875dad2fdd47b5003c26ea80b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  siwar1: {fileID: 11400000, guid: 3976664574ad3524ab77c24af015da4d, type: 2}
-  siwar2: {fileID: 11400000, guid: c4a33fc18ffbedb4899c09d8d1d3a967, type: 2}
-  siwar3: {fileID: 11400000, guid: 78a191b1e7d272f4f90fa7ac22422c06, type: 2}
-  siwar4: {fileID: 11400000, guid: f73c22833e663974a9ddd31dab461043, type: 2}
-  siwar5: {fileID: 11400000, guid: 1ff6c963482ef7741bab7f0dafff64c7, type: 2}
-  trisula1: {fileID: 11400000, guid: 94e3b421961b2b741bdf7aa097317a8a, type: 2}
-  trisula2: {fileID: 11400000, guid: 6949c575300b8694bb0db0d3c9cb81d8, type: 2}
-  trisula3: {fileID: 11400000, guid: 604229a01a1debd44b37cda5473db892, type: 2}
-  trisula4: {fileID: 11400000, guid: 165d3351cb3371141a4b66303e2eaacf, type: 2}
-  trisula5: {fileID: 11400000, guid: 76e5d0dba5e7ec24cb9768edd5e76dd5, type: 2}
-  golok1: {fileID: 11400000, guid: 10e9d4502f2c77b4f9dfe6cf2609cfb0, type: 2}
-  golok2: {fileID: 11400000, guid: d233d0c838f535d4eb3295c529882ea3, type: 2}
-  golok3: {fileID: 11400000, guid: cd8252ad69440824d843d27dae5cbd3b, type: 2}
-  golok4: {fileID: 11400000, guid: d88f35e02335f154d867d1aaafd1a5cb, type: 2}
-  golok5: {fileID: 11400000, guid: 0338663c877da2b438b21608d1b39426, type: 2}
-  jenawi1: {fileID: 11400000, guid: 0fe11b75f990d86489ccd7f55477bc2b, type: 2}
-  jenawi2: {fileID: 11400000, guid: 60f438012da601a45985aec893cae647, type: 2}
-  jenawi3: {fileID: 11400000, guid: c14bbbddf5349b44c9e473cf78c8c462, type: 2}
-  jenawi4: {fileID: 11400000, guid: 241906568470f5241854fe24b9582620, type: 2}
-  jenawi5: {fileID: 11400000, guid: 085c2113eea7327498811c9a26281e38, type: 2}
   loading: {fileID: 1896724187}
   NotEnoughMaterial: {fileID: 1232607684}
   loadingTime: 5
@@ -3504,7 +3484,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2ce585a16d6e949832aec0ddb32ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 0}
+  ClickSound: {fileID: 8300000, guid: 4787c0df64e6f8949b24613680c2bbaf, type: 3}
+  BackButtonSound: {fileID: 8300000, guid: 76c27e4b97ffc4f49abd14b279a7b05c, type: 3}
+  BlackMarketSound: {fileID: 8300000, guid: 55ec927e1109ef14484150060de4ab1d, type: 3}
+  BuySound: {fileID: 8300000, guid: 7bdb8ddd1b216e543a65813d3fd07770, type: 3}
+  BGMusic: {fileID: 8300000, guid: 627544c69d1218e41a8da17dc7df73d0, type: 3}
 --- !u!224 &1607096468
 RectTransform:
   m_ObjectHideFlags: 0
