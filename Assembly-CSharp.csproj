@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\AddInventory.cs" />
-     <Compile Include="Assets\Script\BackMusic.cs" />
      <Compile Include="Assets\Script\BlackMarketMgr.cs" />
      <Compile Include="Assets\Script\BuyCopper.cs" />
      <Compile Include="Assets\Script\BuyerRandomizer.cs" />
@@ -95,7 +94,6 @@
      <Compile Include="Assets\Script\Selling.cs" />
      <Compile Include="Assets\Script\SellTextModifier.cs" />
      <Compile Include="Assets\Script\SellWeapon.cs" />
-     <Compile Include="Assets\Script\SFX.cs" />
      <Compile Include="Assets\Script\ShopMgr.cs" />
      <Compile Include="Assets\Script\ShowMaterial.cs" />
      <Compile Include="Assets\Script\Slot.cs" />

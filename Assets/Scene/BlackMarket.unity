@@ -889,11 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2ce585a16d6e949832aec0ddb32ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 8300000, guid: 4787c0df64e6f8949b24613680c2bbaf, type: 3}
-  BackButtonSound: {fileID: 8300000, guid: 76c27e4b97ffc4f49abd14b279a7b05c, type: 3}
-  BlackMarketSound: {fileID: 8300000, guid: 55ec927e1109ef14484150060de4ab1d, type: 3}
-  BuySound: {fileID: 8300000, guid: 7bdb8ddd1b216e543a65813d3fd07770, type: 3}
-  BGMusic: {fileID: 8300000, guid: 627544c69d1218e41a8da17dc7df73d0, type: 3}
+  t: {fileID: 0}
 --- !u!114 &970601384
 MonoBehaviour:
   m_ObjectHideFlags: 0
