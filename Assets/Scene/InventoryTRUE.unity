@@ -928,7 +928,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 392771419}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b2ce585a16d6e949832aec0ddb32ac9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dfde56719f5bae438a41ca2f0072b19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &392771422
@@ -971,7 +971,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 392771421}
-        m_MethodName: ToGameplay
+        m_MethodName: ChangeAndSave
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1672,6 +1672,7 @@ MonoBehaviour:
   - {fileID: 1694384233}
   - {fileID: 823110619}
   - {fileID: 1307510974}
+  quantity: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!114 &672220321
 MonoBehaviour:
   m_ObjectHideFlags: 0
