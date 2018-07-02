@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Selling.unity
     guid: 02efd2e24a9109f41b0413c49321cd9b
+  - enabled: 1
+    path: Assets/Scene/Encyclopedia.unity
+    guid: 0389480020e765e48836f88f2f912bdc

@@ -56,6 +56,10 @@ public class MasterSceneChange : MonoBehaviour {
 		SceneManager.LoadScene("InventoryTRUE");
 	}
 
+	public void ToEncyclopedia() {
+		SceneManager.LoadScene ("Encyclopedia");
+	}
+
 	public void ExitGame() {
 		//MASUKKIN PLAYER PREF SIMPEN DATABASE DISINI
 		//SFX.instance.source.PlayOneShot (ClickSound);
