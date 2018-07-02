@@ -722,6 +722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 630421180}
+  BGM: {fileID: 8300000, guid: 627544c69d1218e41a8da17dc7df73d0, type: 3}
 --- !u!1 &840319617
 GameObject:
   m_ObjectHideFlags: 0

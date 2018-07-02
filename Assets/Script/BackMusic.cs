@@ -6,7 +6,8 @@ public class BackMusic : MonoBehaviour {
 
     public static BackMusic instance;
     public AudioSource source;
-    
+	public AudioClip BGM;
+
     private void Awake()
     {
         if(instance == null)
@@ -24,7 +25,9 @@ public class BackMusic : MonoBehaviour {
 		source.Play ();
 	}
 
-
+	void Start() {
+		PlayMusic (BGM);
+	}
 
 
     public void SetVolume(float x)

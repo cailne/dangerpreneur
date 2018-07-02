@@ -32,9 +32,7 @@ public class MasterSceneChange : MonoBehaviour {
 	void Start() {
 		if (SceneManager.GetActiveScene ().name == "BlackMarket") {
 			StartCoroutine (WaitBlackMarketSound ());
-		} else {
-			BackMusic.instance.PlayMusic (BGMusic);
-		}
+		} 
 
 
 	}
@@ -121,9 +119,11 @@ public class MasterSceneChange : MonoBehaviour {
 	}
 
 	IEnumerator WaitBlackMarketSound() {
-		BackMusic.instance.source.Stop ();
+		//BackMusic.instance.source.Stop ();
+		BackMusic.instance.source.mute = true;
 		SFX.instance.source.PlayOneShot (BlackMarketSound);
 		yield return new WaitForSeconds (5f);
-		BackMusic.instance.PlayMusic (BGMusic);
+		//BackMusic.instance.PlayMusic (BGMusic);
+		BackMusic.instance.source.mute = false;
 	}
 }

@@ -24,11 +24,13 @@ public float TrueTime, ttm;
 		} else {
 			Destroy (gameObject);
 		}
+		//TrueTime = 41400f;
+
 	}
 
 	void Start () {
 		//PlayerPrefs.DeleteKey ("Time");
-		TrueTime = PlayerPrefs.GetFloat ("Time", 0);
+		TrueTime = PlayerPrefs.GetFloat ("Time",0);
 		if (SceneManager.GetActiveScene ().name != "S1") {
 			month.gameObject.SetActive (false);
 			year.gameObject.SetActive (false);
@@ -46,16 +48,23 @@ public float TrueTime, ttm;
 	}
 	void Update () {
 		TrueTime += Time.deltaTime;
-		Debug.Log("True time update = " + TrueTime);
+		//Debug.Log("True time update = " + TrueTime);
 
 		string m = ((int) (TrueTime / 10) % 13 + 1).ToString();
 		string y = ((int) (TrueTime / 120) + 1600).ToString();
 
 		month.text = m;
 		year.text = y;
-
+		//Debug.Log (m + " , " + y);
 		PlayerPrefs.SetFloat("Time", TrueTime);
+		if (m == "8" && y == "1945") {
+			Debug.Log ("GAME END NOW");
+			SceneManager.LoadScene ("GameFinished");
+		}
 	}
+
+
+
 }
 
 

@@ -72,6 +72,7 @@
      <Compile Include="Assets\Script\DisplayResource.cs" />
      <Compile Include="Assets\Script\EmployeeManager.cs" />
      <Compile Include="Assets\Script\Encyclopedia.cs" />
+     <Compile Include="Assets\Script\EndGame.cs" />
      <Compile Include="Assets\Script\EnergyScript.cs" />
      <Compile Include="Assets\Script\GatherResource.cs" />
      <Compile Include="Assets\Script\GoToShop.cs" />
