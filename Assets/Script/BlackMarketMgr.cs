@@ -16,14 +16,17 @@ public class BlackMarketMgr : MonoBehaviour {
 	public string Request;
 
 	public Text PersonRequest;
+	public Text AfterSell;
 
 	float timeRemaining;
-
+	int idx;
+	Selling selling;
 
 	// Use this for initialization
 
 	void Awake(){
 		connectionPath = "URI=file:" + Application.dataPath + "/StreamingAssets/Dangerpreneur.sqlite";
+		AfterSell.gameObject.SetActive (false);
 	}
 	void Start () {
 		timeRemaining = 5;
@@ -40,6 +43,17 @@ public class BlackMarketMgr : MonoBehaviour {
 		}
 	}
 
+	public void SellBlackMarket() {
+		if (Inventory.Item [idx] >= 1) {
+			Inventory.Item [idx] -= 1;
+			PlayerPrefs.SetInt ("Money", PlayerPrefs.GetInt ("Money", MoneyScript.defaultMoney) + (int)selling.GetPrice (idx));
+			AfterSell.gameObject.SetActive (true);
+			AfterSell.text = "Success!";
+		} else {
+			AfterSell.gameObject.SetActive (true);
+			AfterSell.text = "You don't have that item!";
+		}
+	}
 	private void GetWeaponName(){
 		using(IDbConnection dbConnection = new SqliteConnection(connectionPath)){
 			dbConnection.Open();
@@ -67,6 +81,50 @@ public class BlackMarketMgr : MonoBehaviour {
 		int Gold = UnityEngine.Random.Range (1000, 3001);
 		string Speech = "Make me " + Request + " and i will give you " + Gold + " Rupiah";
 		PersonRequest.text = Speech;
+		AfterSell.gameObject.SetActive (false);
+	}
+
+	void StringToIdx() {
+		if (Request == "Siwar Panjang Copper") {
+			idx = 5;
+		}else if (Request == "Siwar Panjang Gold") {
+			idx = 6;
+		}else if (Request == "Siwar Panjang Iron") {
+			idx = 7;
+		}else if (Request == "Siwar Panjang Silver") {
+			idx = 8;
+		}else if (Request == "Siwar Panjang Steel") {
+			idx = 9;
+		}
+
+		if (Request == "Pedang Jenawi Copper") {
+			idx = 0;
+		}else if (Request == "Pedang Jenawi Gold") {
+			idx = 1;
+		}else if (Request == "Pedang Jenawi Iron") {
+			idx = 2;
+		}else if (Request == "Pedang Jenawi Silver") {
+			idx = 3;
+		}else if (Request == "Pedang Jenawi Steel") {
+			idx = 4;
+		}
+
+		if (Request == "Tombak Trisula Copper") {
+			idx = 10;
+		} else if (Request == "Tombak Trisula Gold") {
+			idx = 11;
+		}else if (Request == "Tombak Trisula Iron") {
+			idx = 12;
+		}else if (Request == "Tombak Trisula Silver") {
+			idx = 13;
+		}else if (Request == "Tombak Trisula Steel") {
+			idx = 14;
+		}
+
+
+
+
+
 	}
 		
 }

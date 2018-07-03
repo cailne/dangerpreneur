@@ -9,6 +9,10 @@ public class Selling : MonoBehaviour {
 	[SerializeField] float[] price;
 	public Text pop;
 
+	public float GetPrice(int index) {
+		return price [index];
+	}
+
 	public void STW0(){
 		if (Inventory.Item[0] >= 1){
 			pop.text = "+" + (price[0] * PlayerPrefs.GetFloat("ShopMM")).ToString();

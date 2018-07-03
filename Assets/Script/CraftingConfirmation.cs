@@ -145,6 +145,7 @@ public class CraftingConfirmation : MonoBehaviour {
 				AllowCraft = true;
 				tempCooper--;
 				PlayerPrefs.SetInt ("Cooper", tempCooper);
+				PlayerPrefs.SetInt ("Wood", PlayerPrefs.GetInt ("Wood", 0) - 1);
 
 			}
 			break;
@@ -153,7 +154,8 @@ public class CraftingConfirmation : MonoBehaviour {
 			if (tempGold >= 1 && tempWood >= 1) {
 				AllowCraft = true;
 				tempGold--;
-				PlayerPrefs.SetInt ("Gold", tempCooper);
+				PlayerPrefs.SetInt ("Gold", tempGold);
+				PlayerPrefs.SetInt ("Wood", PlayerPrefs.GetInt ("Wood", 0) - 1);
 			}
 			break;
 
@@ -161,7 +163,8 @@ public class CraftingConfirmation : MonoBehaviour {
 			if (tempIron >= 1 && tempWood >= 1) {
 				AllowCraft = true;
 				tempIron--;
-				PlayerPrefs.SetInt ("Iron", tempCooper);
+				PlayerPrefs.SetInt ("Iron", tempIron);
+				PlayerPrefs.SetInt ("Wood", PlayerPrefs.GetInt ("Wood", 0) - 1);
 			}
 			break;
 
@@ -169,7 +172,8 @@ public class CraftingConfirmation : MonoBehaviour {
 			if (tempSilver >= 1 && tempWood >= 1) {
 				AllowCraft = true;
 				tempSilver--;
-				PlayerPrefs.SetInt ("Silver", tempCooper);
+				PlayerPrefs.SetInt ("Silver", tempSilver);
+				PlayerPrefs.SetInt ("Wood", PlayerPrefs.GetInt ("Wood", 0) - 1);
 			}
 			break;
 		
@@ -177,7 +181,8 @@ public class CraftingConfirmation : MonoBehaviour {
 			if (tempRock >= 1 && tempWood >= 1) {
 				AllowCraft = true;
 				tempRock--;
-				PlayerPrefs.SetInt ("Rock", tempCooper);
+				PlayerPrefs.SetInt ("Rock", tempRock);
+				PlayerPrefs.SetInt ("Wood", PlayerPrefs.GetInt ("Wood", 0) - 1);
 			}
 			break;
 		
