@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class BlackMarketMgr : MonoBehaviour {
 
 	private string connectionPath;
-
+	public int Gold;
 	//public GameObject ReqPrefab;
 
 	public string Request;
@@ -32,6 +32,8 @@ public class BlackMarketMgr : MonoBehaviour {
 		timeRemaining = 5;
 		GetWeaponName ();
 		ShowRequest ();
+		StringToIdx ();
+		Debug.Log (idx);
 	}
 	
 	// Update is called once per frame
@@ -46,7 +48,7 @@ public class BlackMarketMgr : MonoBehaviour {
 	public void SellBlackMarket() {
 		if (Inventory.Item [idx] >= 1) {
 			Inventory.Item [idx] -= 1;
-			PlayerPrefs.SetInt ("Money", PlayerPrefs.GetInt ("Money", MoneyScript.defaultMoney) + (int)selling.GetPrice (idx));
+			PlayerPrefs.SetInt ("Money", PlayerPrefs.GetInt ("Money", MoneyScript.defaultMoney) + (int)Gold);
 			AfterSell.gameObject.SetActive (true);
 			AfterSell.text = "Success!";
 		} else {
@@ -78,7 +80,7 @@ public class BlackMarketMgr : MonoBehaviour {
 	}
 
 	private void ShowRequest(){
-		int Gold = UnityEngine.Random.Range (1000, 3001);
+		Gold = UnityEngine.Random.Range (1000, 3001);
 		string Speech = "Make me " + Request + " and i will give you " + Gold + " Rupiah";
 		PersonRequest.text = Speech;
 		AfterSell.gameObject.SetActive (false);
